@@ -1,0 +1,107 @@
+$lightText: #fff1f5
+$captionColor: #333333
+$secondCaptionColor: #d5423a
+$descColor: #525151
+$btnColor: #d5423a
+$btnColor2: #b13d36
+
+$phone: 380px
+$interval3: 480px
+$tablet: 800px
+$interval: 930px
+$interval2: 1090px
+$interval4: 1200px
+$laptop: 1290px
+$desctop: 1390px
+
+=media($media)
+	@if $media == phone
+		@media only screen and (max-width: $phone)
+			@content
+	@else if $media == tablet
+		@media only screen and (max-width: $tablet)
+			@content
+
+	@else if $media == interval
+		@media only screen and (max-width: $interval)
+			@content
+
+	@else if $media == interval2
+		@media only screen and (max-width: $interval2)
+			@content
+
+	@else if $media == interval3
+		@media only screen and (max-width: $interval3)
+			@content
+
+	@else if $media == interval4
+		@media only screen and (max-width: $interval4)
+			@content
+
+	@else if $media == laptop
+		@media only screen and (max-width: $laptop)
+			@content
+
+	@else if $media == desctop
+		@media only screen and (max-width: $desctop)
+			@content
+
+=use-latoFont($size: false, $color: false, $weight: false, $lh: false)
+	font-family: 'Lato', sans-serif
+
+	@if $size
+		font-size: $size
+
+	@if $color
+		color: $color
+
+	@if $weight
+		font-weight: $weight
+
+	@if $lh
+		line-height: $lh
+
+=use-sourceSansFont($size: false, $color: false, $weight: false, $lh: false)
+	font-family: 'Source Sans Pro', sans-serif
+
+	@if $size
+		font-size: $size
+	@if $color
+		color: $color
+	@if $weight
+		font-weight: $weight
+	@if $lh
+		line-height: $lh
+
+=links($main-font, $size, $color, $bgcolor: false, $txttrans: false)
+	font-family: $main-font, sans-serif
+	font-size: $size
+	color: $color
+	padding: 10px
+	display: inline-block
+	text-decoration: none
+	@if $txttrans
+		text-transform: $txttrans
+	@if $bgcolor
+		background: $bgcolor
+
+=gradient
+	background: #fd712c
+	background: -moz-linear-gradient(left, #fd712c 0%, #f31e7a 100%)
+	background: -webkit-linear-gradient(left, #fd712c 0%,#f31e7a 100%)
+	background: linear-gradient(to right, #fd712c 0%,#f31e7a 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd712c', endColorstr='#f31e7a',GradientType=1 )
+
+
+=placeholder
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&::-ms-input-placeholder
+		@content
+
+@function rem($px)
+	@return $px / 16px + 0rem
