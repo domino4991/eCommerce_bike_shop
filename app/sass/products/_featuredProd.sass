@@ -1,0 +1,147 @@
+.featured__products
+  position: relative
+  margin-bottom: 4rem
+  
+.caption__products
+  +use-latoFont(3rem, $txtBlack, 700)
+  text-transform: uppercase
+
+.tabs
+  position: absolute
+  top: 10px
+  right: 0
+  vertical-align: middle
+
+.tabs__list
+  margin: 0
+  padding: 0
+
+.tabs__item
+  list-style: none
+  display: inline-block
+  position: relative
+  padding: 0px 5px 0px 5px
+  &:before
+    content: ''
+    position: absolute
+    top: 11px
+    left: -4px
+    width: 4px
+    height: 4px
+    display: block
+    border-radius: 50%
+    background: #e0e0e0
+    vertical-align: middle
+  &:first-child:before
+    content: ''
+    display: none
+  &:last-child
+    padding-right: 0px
+
+.tabs__link
+  border: none
+  background: #fff
+  cursor: pointer
+  transition: .5s
+  +use-latoFont(1.9rem, $txtBlack, 300)
+
+.activeTabs
+  color: $priceRed
+  
+.wrap__products
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 20px
+
+.item__products
+  width: 30%
+  text-align: center
+
+.img__wrap
+  position: relative
+  overflow: hidden
+
+.featured__img
+  width: 100%
+  object-fit: cover
+  transition: .6s
+
+.desc__products
+  +use-latoFont(1.9rem, $txtBlack, 300)
+
+.price__products
+  +use-latoFont(1.9rem, $priceRed, 300)
+
+.featured__hoverBtn
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  background: rgba(255,255,255, 0.4)
+  display: flex
+  align-content: center
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  opacity: 0
+  transition: .6s
+
+.hoverBtn-btn
+  +use-latoFont(1.6rem, #fff, 300)
+  background: $txtBlack
+  border: none
+  padding: 1.4rem 2.7rem
+  margin-bottom: 1rem 
+  cursor: pointer
+  display: none
+
+.item__products:hover .featured__hoverBtn
+  opacity: 1
+
+.item__products:hover .hoverBtn-btn
+  display: block
+
+.item__products:hover .featured__img,
+.item__products:hover .widget__img
+  transform: scale(1.1)
+  filter: blur(3px)
+
+.featured__colors
+  width: 100%
+  display: flex
+  align-content: center
+  align-items: center
+  justify-content: center
+
+.colors__list
+  margin: 0
+  padding: 0
+
+.colors__item
+  display: inline-block
+  list-style: none
+  margin-right: 1rem
+
+.colors__btn
+  border: none
+  width: 14px
+  height: 14px
+  border-radius: 50%
+  cursor: pointer
+
+.crlBlue
+  background-color: #2196f3
+
+.crlOrange
+  background-color: #ff9800
+
+.crlViolet
+  background-color: #673ab7
+
+.crlGrey
+  background-color: #607d8b
+
+.crlBrown
+  background-color: #ff5722

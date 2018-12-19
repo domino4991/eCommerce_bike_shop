@@ -1,0 +1,47 @@
+.header-main
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  overflow: hidden
+  padding: 5.8rem 0px
+
+.logo
+  +use-latoFont(4rem, $txtBlack, 700)
+  text-transform: uppercase
+
+.header-main__search--form
+  display: inline-block
+  position: relative
+
+.search__category
+  width: 15.4rem
+  border: 1px solid #e0e0e0
+  border-radius: 5px
+  appearance: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  -ms-appearance: none
+  padding: 1.5rem
+  +use-latoFont(1.4rem, $txtBlack, 300)
+  background: url(../../img/selectArrow.png) no-repeat
+  background-position: 90%
+
+.header-search__inp
+  padding: 1.6rem
+  border: 1px solid #e0e0e0
+  width: 38.2rem
+  border-radius: 5px
+  +use-latoFont(1.4rem, $txtBlack, 300)
+  +placeholder
+    +use-latoFont(1.4rem, #bdbdbd, 300)
+
+.btn-search
+  position: absolute
+  top: 50%
+  right: 1px
+  transform: translateY(-50%)
+  padding: 11px 20px 11px 11px
+  font-size: 1.8rem
+  border: none
+  background: #fff
+  cursor: pointer

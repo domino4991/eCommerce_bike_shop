@@ -1,0 +1,54 @@
+.header-top
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  overflow: hidden
+  padding-top: 1.7rem
+
+.phone,
+.currency,
+.lang
+  +use-latoFont(1.4rem, $txtBlack)
+
+.currency,
+.lang
+  border: none
+  border-right: 1px solid #e0e0e0
+  appearance: none
+  -ms-appearance: none
+  padding: 0px 5px
+  cursor: pointer
+
+.currency
+  padding-left: 0
+
+.phone
+  margin-left: 1.7rem
+
+.header-top__list
+  margin: 0
+  padding: 0
+
+.list__item
+  display: inline-block
+  list-style: none
+  border-right: 1px solid #e0e0e0
+  padding: 0 1.9rem
+  &:last-child
+    border-right: none
+    padding-right: 0
+
+.item__link
+  +use-latoFont(1.4rem, $txtBlack)
+  text-decoration: none
+  &:after
+    content: ''
+    width: 100%
+    height: 1px
+    margin-top: 0.3rem
+    display: block
+    background-color: $btnColor
+    transform: scale(0)
+    transition: .3s
+  &:hover:after
+    transform: scale(1)

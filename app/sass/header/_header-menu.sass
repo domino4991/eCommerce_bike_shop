@@ -1,0 +1,52 @@
+.header-menu
+  background: $txtBlack
+  overflow: hidden
+  padding: 15px 0px
+
+.menuWrap
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.nav__list,
+.wishlist__list
+  margin: 0
+  padding: 0
+
+.nav__list--item,
+.wishlist__item
+  display: inline-block
+  list-style: none
+
+.nav__link
+  +use-latoFont(1.6rem, #fff, 300)
+  text-transform: uppercase
+  text-decoration: none
+  padding: 10px 38px
+  margin: 0px 9px
+  &:first-child
+    padding-left: 0px
+    margin-left: 0
+
+.wishlist
+  +use-latoFont(1.4rem, #fff, 300)
+
+.wishlist__btn
+  border: none
+  background: none
+  font-size: 1.8rem
+  color: #fff
+  cursor: pointer
+  position: relative
+
+.wishlist__btn:before
+  content: '0'
+  width: 18px
+  height: 18px
+  display: block
+  position: absolute
+  font-size: 1.2rem
+  top: 0
+  left: -5px
+  border-radius: 50%
+  background: $priceRed

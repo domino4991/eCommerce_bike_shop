@@ -2,23 +2,26 @@ include inc/mixin
 
 <!DOCTYPE html>
 html(lang="en")
-	head
-		meta(charset="UTF-8")
-		meta(name="viewport", content="width=device-width")
-		title Document
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:300,400,400i,700,900|Roboto+Slab" rel="stylesheet")
+    link(rel="stylesheet", href="css/font-awesome.min.css")
+    link(rel="stylesheet", href="css/style.min.css")
+    script(src="js/libs.min.js")
+    script(src="js/common.js")
+  body
+    include inc/header/header
+    main
+      article
+        include inc/banner/banner
+        include inc/advantages/advantages
+        include inc/products/products
+        include inc/getInTouch
+        include inc/homePageBlog
+        include inc/partners
+    footer
+      include inc/footer/footer
 
-		link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
-		link(rel="apple-touch-icon" href="img/favicon/apple-touch.png")
-		link(rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-72x72.png")
-		link(rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-114x114.png")
-
-		link(rel="stylesheet" href="../css/font-awesome.min.css")
-		link(rel="stylesheet" href="css/style.min.css?rev=@@hash")
-		script(src="js/libs.min.js")
-		script(src="js/common.js")
-
-	body
-    .wrapper
-      include inc/header
-		a(href="#header" class="scroll-top flowing-scroll")
-			i(class="fa fa-arrow-up" aria-hidden="true")

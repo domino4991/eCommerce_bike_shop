@@ -1,0 +1,26 @@
+.advantages
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  overflow-y: hidden
+  padding: 54px 0px
+  border-bottom: 1px solid #e0e0e0
+  margin-bottom: 20px
+  position: relative
+  &__item
+    width: 30%
+    text-align: center
+    border-right: 1px solid #e0e0e0
+    &:last-child
+      border-right: none
+  &__caption
+    +use-latoFont(1.6rem, $txtBlack, 700)
+    text-transform: uppercase
+  &__desc
+    +use-latoFont(1.6rem, $txtBlack, 300)
+  &__shadow
+    display: block
+    position: absolute
+    bottom: 1%
+    left: 50%
+    transform: translateX(-50%)

@@ -1,0 +1,104 @@
+.product__cart
+  background: #f5f5f5
+  padding: 9rem 0px
+
+.product__wrap
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  overflow: hidden
+
+.product__item
+  width: 45%
+
+.product__img
+  width: 100%
+  object-fit: cover
+  padding-top: 3.5rem
+
+.item__counter
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  border-bottom: 2px solid #e0e0e0
+  padding-bottom: 3rem
+
+.counter
+  margin-right: 3rem
+  border: 2px solid $txtBlack
+  padding: 15px 20px
+  border-radius: 10px 10px 10px 0px
+
+.counter__number
+  +use-latoFont(2.5rem, $txtBlack, 700)
+
+.counter__prefix
+  +use-latoFont(1.6rem, $txtBlack, 300)
+  margin: 0
+  text-align: center
+
+.item__description
+  padding: 3rem 0px
+  border-bottom: 2px solid #e0e0e0
+
+.modelBike
+  +use-latoFont(2.5rem, $txtBlack, 700)
+  text-transform: uppercase
+
+.modelRating
+  +use-latoFont(3rem, $txtBlack, 700)
+
+.modelPrice
+  +use-latoFont(3rem, $priceRed, 700)
+
+.item__options
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  padding: 3rem 0px
+  border-bottom: 2px solid #e0e0e0
+
+.colors
+  width: 70%
+
+.prod-list
+  display: inline-block
+  vertical-align: text-bottom
+  margin-left: 3rem
+
+.colors__opt,
+.inStock__txt
+  +use-latoFont(1.9rem, $txtBlack, 300)
+
+.colors__opt
+  display: inline-block
+
+.inStock__txt
+  text-align: center
+
+.item__btns
+  padding-top: 3rem
+
+.addCart,
+.addWishlist
+  +use-latoFont(1.9rem, $txtBlack, 300)
+  text-transform: uppercase
+  border: none
+  padding: 1.5rem 2rem
+  cursor: pointer
+
+.addCart
+  background: $priceRed
+  color: #fff
+
+.addWishlist
+  background: none
+
+.activeWish
+  color: $priceRed
+  transition: .5s
+
+.fa-marg,
+.fa-wish
+  margin-right: 1rem
+  transition: .5s

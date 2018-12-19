@@ -2,18 +2,395 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8"/>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width"/>
-		<title>Hiking Travel</title>
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style.min.css?rev=@@hash"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Document</title>
+		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:300,400,400i,700,900|Roboto+Slab" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/style.min.css"/>
 		<script src="js/libs.min.js"></script>
 		<script src="js/common.js"></script>
 	</head>
 	<body>
-		<div class="wrapper">
-			
-		</div>
-		<a href="#header" class="scroll-top flowing-scroll"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+		<header class="header">
+			<div class="container">
+				<div class="header-top">
+					<div class="header-top__lang">
+						<select class="currency" name="curr">
+							<option value="usd">USD</option>
+							<option value="eur">EUR</option>
+							<option value="rub">RUB</option>
+						</select>
+						<select class="lang" name="lang">
+							<option value="eng">English</option>
+							<option value="rus">Russian</option>
+						</select><span class="phone">Call us : (012) 3456 7890</span>
+					</div>
+					<div class="header-top__user">
+						<nav>
+							<ul class="header-top__list">
+								<li class="list__item"><a class="item__link" href="#">My Account </a></li>
+								<li class="list__item"><a class="item__link" href="#">Wishlist</a></li>
+								<li class="list__item"><a class="item__link" href="#">My Cart</a></li>
+								<li class="list__item"><a class="item__link" href="#">Checkout</a></li>
+								<li class="list__item"><a class="item__link" href="#">Login</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header-main">
+					<div class="header-main__logo">
+						<h2 class="logo">bike sport</h2>
+					</div>
+					<div class="header-main__search">
+						<select class="search__category" name="category">
+							<option value="all">All Category</option>
+							<option value="bmx">BMX</option>
+						</select>
+						<form class="header-main__search--form">
+							<input class="header-search__inp" type="search" name="search" placeholder="Search for product"/>
+							<button class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="header-menu">
+				<div class="container menuWrap">
+					<div class="menu">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__list--item"><a class="nav__link" href="#">Home</a></li>
+								<li class="nav__list--item"><a class="nav__link" href="#">Category</a></li>
+								<li class="nav__list--item"><a class="nav__link" href="#">Bikes</a></li>
+								<li class="nav__list--item"><a class="nav__link" href="#">Gear</a></li>
+								<li class="nav__list--item"><a class="nav__link" href="#">Blog</a></li>
+								<li class="nav__list--item"><a class="nav__link" href="#">About</a></li>
+								<li class="nav__list--item"><a class="nav__link" href="#">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="wishlist">
+						<ul class="wishlist__list">
+							<li class="wishlist__item">
+								<button class="wishlist__btn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+							</li>
+							<li class="wishlist__item">
+								<button class="wishlist__btn"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+							</li>
+							<li class="wishlist__item">Cart: <span class="price">$199.00</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<article>
+				<section class="banner">
+					<div class="banner__slider">
+						<div class="slider__item"><img class="slider__img imgBg" src="../../../img/upload/dhbike.jpg" alt="down hill bike"/>
+							<div class="slider__content">
+								<h1 class="slider__caption">t<sup>h</sup>e b<sup>i</sup>c<sup>y</sup>c<sup>l</sup>e</h1>
+								<p class="slider__description">Lorem Ipsum is simply dummy text of the printing</p><a class="slider__link btn" href="#">shop now</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="container">
+						<div class="advantages">
+							<div class="advantages__item">
+								<h4 class="advantages__caption">free uk delivery</h4>
+								<p class="advantages__desc">International delivery available</p>
+							</div>
+							<div class="advantages__item">
+								<h4 class="advantages__caption">gift cards & wrapping</h4>
+								<p class="advantages__desc">The perfect way to bring a smile</p>
+							</div>
+							<div class="advantages__item">
+								<h4 class="advantages__caption">qualified opticians</h4>
+								<p class="advantages__desc">Prescription Experts</p>
+							</div>
+						</div><img class="advantages__shadow" src="../../../img/shadow.png"/>
+					</div>
+				</section>
+				<section class="products">
+					<div class="container">
+						<div class="featured__products">
+							<h2 class="caption__products">Featured products</h2>
+							<div class="tabs">
+								<ul class="tabs__list">
+									<li class="tabs__item">
+										<button class="tabs__link activeTabs">On-Road</button>
+									</li>
+									<li class="tabs__item">
+										<button class="tabs__link">X-Road</button>
+									</li>
+									<li class="tabs__item">
+										<button class="tabs__link">Off-Road</button>
+									</li>
+									<li class="tabs__item">
+										<button class="tabs__link">BMX</button>
+									</li>
+								</ul>
+							</div>
+							<div class="wrap__products">
+								<div class="item__products">
+									<div class="img__wrap"><img class="featured__img" src="../../../img/upload/bike1.jpg" alt="On road bike"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Propel Advanced SL 0</p>
+									<p class="price__products">&#36;900.00</p>
+								</div>
+								<div class="item__products">
+									<div class="img__wrap"><img class="featured__img" src="../../../img/upload/bike2.jpg" alt="On road bike"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Defy Advanced SL</p>
+									<p class="price__products">&#36;1770.00</p>
+								</div>
+								<div class="item__products">
+									<div class="img__wrap"><img class="featured__img" src="../../../img/upload/bike3.jpg" alt="On road bike"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">FastRoad CoMax</p>
+									<p class="price__products">&#36;900.00</p>
+								</div>
+							</div>
+							<div class="featured__colors">
+								<ul class="colors__list">
+									<li class="colors__item"> 
+										<button class="crlBlue colors__btn"></button>
+									</li>
+									<li class="colors__item">
+										<button class="crlOrange colors__btn"></button>
+									</li>
+									<li class="colors__item">
+										<button class="crlViolet colors__btn"></button>
+									</li>
+									<li class="colors__item">
+										<button class="crlGrey colors__btn"></button>
+									</li>
+									<li class="colors__item">
+										<button class="crlBrown colors__btn"></button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="product__cart">
+						<div class="container">
+							<div class="product__wrap">
+								<div class="product__item"><img class="product__img" src="../../../img/upload/bike4.jpg" alt="Propel Advanced Pro Frameset"/></div>
+								<div class="product__item">
+									<div class="item__counter">
+										<div class="counter">
+											<h5 class="counter__number">120</h5>
+											<p class="counter__prefix">days</p>
+										</div>
+										<div class="counter">
+											<h5 class="counter__number">09</h5>
+											<p class="counter__prefix">hour</p>
+										</div>
+										<div class="counter">
+											<h5 class="counter__number">38</h5>
+											<p class="counter__prefix">min</p>
+										</div>
+										<div class="counter">
+											<h5 class="counter__number">57</h5>
+											<p class="counter__prefix">sec</p>
+										</div>
+									</div>
+									<div class="item__description">
+										<p class="modelBike">Propel Advanced Pro Frameset</p>
+										<p class="modelRating">* * * * *</p>
+										<p class="modelPrice">&#36;2,290.00</p>
+									</div>
+									<div class="item__options">
+										<div class="colors"> 
+											<p class="colors__opt">Color : 
+												<ul class="colors__list prod-list">
+													<li class="colors__item"> 
+														<button class="crlBlue colors__btn"></button>
+													</li>
+													<li class="colors__item">
+														<button class="crlOrange colors__btn"></button>
+													</li>
+													<li class="colors__item">
+														<button class="crlViolet colors__btn"></button>
+													</li>
+													<li class="colors__item">
+														<button class="crlGrey colors__btn"></button>
+													</li>
+													<li class="colors__item">
+														<button class="crlBrown colors__btn"></button>
+													</li>
+												</ul>
+											</p>
+										</div>
+										<div class="inStock">
+											<p class="inStock__txt">In Stock: 10</p>
+										</div>
+									</div>
+									<div class="item__btns">
+										<button class="addCart"><i class="fa fa-shopping-bag fa-marg" aria-hidden="true"></i> Add to cart</button>
+										<button class="addWishlist"><i class="fa fa-heart fa-wish" aria-hidden="true"></i> Add to wishlist</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="widget__products">
+							<h2 class="caption__products">Widget products</h2>
+							<div class="tabs">
+								<ul class="tabs__list">
+									<li class="tabs__item">
+										<button class="tabs__link">Baby Seats</button>
+									</li>
+									<li class="tabs__item">
+										<button class="tabs__link">Bells</button>
+									</li>
+									<li class="tabs__item">
+										<button class="tabs__link">Bottle Cages</button>
+									</li>
+									<li class="tabs__item">
+										<button class="tabs__link">Fenders</button>
+									</li>
+									<li class="tabs__item">
+										<button class="tabs__link activeTabs">View All</button>
+									</li>
+								</ul>
+							</div>
+							<div class="wrap__products">
+								<div class="item__products widget">
+									<div class="img__wrap"><img class="widget__img" src="../../../img/upload/Rack-It_Disc_Rack.jpg" alt="Rack-It Disc Rack"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Rack-It Disc Rack</p>
+									<p class="price__products">&#36;1100.00</p>
+								</div>
+								<div class="item__products widget">
+									<div class="img__wrap"><img class="widget__img" src="../../../img/upload/P-TRX1_29er_Alloy_Trail.jpg" alt="P-TRX1 29er Alloy Trail"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">P-TRX1 29er Alloy Trail</p>
+									<p class="price__products">&#36;320.00</p>
+								</div>
+								<div class="item__products widget">
+									<div class="img__wrap"><img class="widget__img" src="../../../img/upload/SureLock_Protector_1_LS.jpg" alt="SureLock Protector 1 LS"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">SureLock Protector 1 LS</p>
+									<p class="price__products">&#36;65.00</p>
+								</div>
+								<div class="item__products widget">
+									<div class="img__wrap"><img class="widget__img" src="../../../img/upload/Liv giant_Sport_Pedals.jpg" alt="Liv/giant Sport Pedals"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Liv/giant Sport Pedals</p>
+									<p class="price__products">&#36;48.00</p>
+								</div>
+								<div class="item__products widget">
+									<div class="img__wrap"><img class="widget__img" src="../../../img/upload/Liv_Connect_Forward.jpg" alt="Liv Connect Forward"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Liv Connect Forward</p>
+									<p class="price__products">&#36;15.00</p>
+								</div>
+								<div class="item__products widget">
+									<div class="img__wrap"><img class="widget__img" src="../../../img/upload/Cyclotron_Mag_II_Trainer.jpg" alt="Cyclotron Mag II Trainer"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Cyclotron Mag II Trainer</p>
+									<p class="price__products">&#36;180.00</p>
+								</div>
+								<div class="item__products widget">
+									<div class="img__wrap"><img class="widget__img" src="../../../img/upload/Comfort_DX_Grips.jpg" alt="Comfort DX Grips"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Comfort DX Grips</p>
+									<p class="price__products">&#36;12.00</p>
+								</div>
+								<div class="item__products widget">
+									<div class="img__wrap"><img class="widget__img" src="../../../img/upload/Liv_Rev_Helmet.jpg" alt="Liv Rev Helmete"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Liv Rev Helmet</p>
+									<p class="price__products">&#36;150.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="getInTouch">
+					<div class="wrap__getInTouch"><img class="getInTouch__img imgBg" src="../../img/upload/dh2.jpg"/>
+						<div class="getInTouch__content">
+							<h2 class="getInTouch__caption">get in touch</h2>
+							<p class="getInTouch__desc">Have an idea or a project, lets collaborate and build some awesome stuff</p><a class="getInTouch__btn btn" href="#">Buy now</a>
+						</div>
+					</div>
+				</section>
+				<section class="homeBlog">
+					<div class="container">
+						<h2 class="homeBlog__caption">from our blog</h2>
+						<p class="homeBlog__desc">Latest news & event of our bike</p>
+						<div class="homeBlog__wrap">
+							<div class="homeBlog__wrap--item">
+								<div class="item__img wrap__item"><img class="homeBlog__img" src="../../img/upload/dhbike3.jpg" alt="Down hill bike"/></div>
+								<div class="item__content wrap__item">
+									<h3 class="content__miniCaption">Gulf Today Report On KGS Carnival – 2015</h3>
+									<p class="content__miniPosted">Posted at March 19. 2015</p>
+									<p class="content__miniDesc">Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.</p><a class="content__linkFullPost" href="#">Continue Reading</a>
+								</div>
+							</div>
+							<div class="homeBlog__wrap--item">
+								<div class="item__img wrap__item"><img class="homeBlog__img" src="../../img/upload/dhbike4.jpeg" alt="Down hill bike"/></div>
+								<div class="item__content wrap__item">
+									<h3 class="content__miniCaption">Excepteur sint ipsum dolor sit amet conse ctetur</h3>
+									<p class="content__miniPosted">Posted at March 19. 2015</p>
+									<p class="content__miniDesc">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt . Lorem ipsum dolor sit amet conse ctetur adipisicing</p><a class="content__linkFullPost" href="#">Continue Reading</a>
+								</div>
+							</div>
+						</div><img class="homeBlog__shadow" src="../../../img/shadow.png" alt="shadow"/>
+					</div>
+				</section>
+			</article>
+		</main>
+		<footer>
+			<footer class="footer"></footer>
+		</footer>
 	</body>
 </html>
