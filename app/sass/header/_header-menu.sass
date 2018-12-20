@@ -1,12 +1,11 @@
 .header-menu
   background: $txtBlack
-  overflow: hidden
-  padding: 15px 0px
 
 .menuWrap
   display: flex
   justify-content: space-between
   flex-wrap: wrap
+  height: 50px
 
 .nav__list,
 .wishlist__list
@@ -17,6 +16,7 @@
 .wishlist__item
   display: inline-block
   list-style: none
+  padding: 15px 0
 
 .nav__link
   +use-latoFont(1.6rem, #fff, 300)
@@ -24,9 +24,12 @@
   text-decoration: none
   padding: 10px 38px
   margin: 0px 9px
+  transition: .4s
   &:first-child
     padding-left: 0px
     margin-left: 0
+  &:hover
+    color: #595959
 
 .wishlist
   +use-latoFont(1.4rem, #fff, 300)
@@ -50,3 +53,38 @@
   left: -5px
   border-radius: 50%
   background: $priceRed
+
+.category
+  position: relative
+
+.category__dropdown
+  position: absolute
+  bottom: -160px
+  left: 0
+  z-index: 5
+  display: none
+
+.dropdown__wrap
+  background: rgba(0,0,0,0.5)
+  width: 130px
+
+.dropdown__list
+  margin: 0
+  padding: 0
+
+.dropdown__item
+  list-style: none
+  width: 100%
+  height: 40px
+  padding: 8px
+  transition: .4s
+  &:hover
+    background: rgba(255,255,255,0.3)
+
+.dropdown__link
+  +use-latoFont(1.6rem, #fff, 300)
+  text-transform: uppercase
+  text-decoration: none
+
+.category:hover .category__dropdown
+  display: block

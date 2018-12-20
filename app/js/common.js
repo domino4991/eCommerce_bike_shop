@@ -1,7 +1,10 @@
 $(function() {
-  // $('.owl-carousel').owlCarousel({
-    
-  // })
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    navText: ['<i class="fa fa-arrow-left" aria-hidden="true"></i>', '<i class="fa fa-arrow-right" aria-hidden="true"></i>'],
+    nav: true
+  })
 
   $('.hamburger').on('click', function() {
     $(this).toggleClass('is-active');

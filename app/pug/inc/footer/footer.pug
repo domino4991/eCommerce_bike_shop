@@ -1,4 +1,106 @@
-footer.footer
-  include contactInfo
-  include homeComments
-  include footerMenu
+.container
+  .footerInfo__wrap
+    .footerInfo__item.contact__item
+      h2.item__caption Contact info
+      p.item__desc At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+      p.footerInfo__address #[span Address:] 123 Sky Tower address name, Los Algeles, USA, Country, 01234
+      p.footerInfo__phone #[span Phone:] (012) 345 6789
+      p.footerInfo__email #[span E-mail:] info@lorem.com
+      form(action="#" class="form")
+        input(type="email", name="email" class="email__inp" placeholder="Enter your email")
+        button.subscribe Subscribe
+      .social__media
+        ul.social__list
+          li.social__item
+            a(href="#" class="social__link")
+              i(class="fa fa-facebook" aria-hidden="true")
+          li.social__item
+            a(href="#" class="social__link")
+              i(class="fa fa-twitter" aria-hidden="true")
+          li.social__item
+            a(href="#" class="social__link")
+              i(class="fa fa-google-plus" aria-hidden="true")
+          li.social__item
+            a(href="#" class="social__link")
+              i(class="fa fa-tumblr" aria-hidden="true")
+          li.social__item
+            a(href="#" class="social__link")
+              i(class="fa fa-flickr" aria-hidden="true")
+          li.social__item
+            a(href="#" class="social__link")
+              i(class="fa fa-pinterest-square" aria-hidden="true")
+    .footerInfo__item.commentsMenu__wrap
+      .comments__item.commentsMenu__item
+        h2.item__caption What clients say?
+        .client__wrap
+          .client__photo
+            img(src="", alt="Client Photo")
+          .client__comment
+            p.item__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            p.client__name Kathy Young
+      .commentsMenu__item
+        .menu__wrap
+          .menu__item
+            h2.item__caption how to buy
+            nav.footer__nav
+              ul.footer__nav--list
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Contact Us
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Returns
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Site Map
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Brands
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Gifts Vouchers
+          .menu__item
+            h2.item__caption My account
+            nav.footer__nav
+              ul.footer__nav--list
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") My Account
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Order History
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Wish List
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Newsletter
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Specials
+          .menu__item
+            h2.item__caption Information
+            nav.footer__nav
+              ul.footer__nav--list
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") About Us
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Contact Us
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Term & Conditions
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Privacy Policy
+                li.footer__nav--item
+                  a(href="#" class="footer__nav--link") Orders and Returns
+.footer__bottom
+  .container
+    .footer__bottom--wrap
+      .footer__bottom--item
+        p.footer__bottom--copyright Copyright © 2015 #[span Magento Themes] by TemPlaza. All rights reserved.
+      .footer__bottom--item
+        ul.payments__list
+          li.payments__item
+            a(href="#" class="payments__link")
+              img(src="../../../img/Visa.png", alt="Visa card")
+          li.payments__item
+            a(href="#" class="payments__link")
+              img(src="../../../img/Intersection.png", alt="Master card")
+          li.payments__item
+            a(href="#" class="payments__link")
+              img(src="../../../img/ebay.png", alt="eBay")
+          li.payments__item
+            a(href="#" class="payments__link")
+              img(src="../../../img/Amazon.png", alt="Amazon")
+          li.payments__item
+            a(href="#" class="payments__link")
+              img(src="../../../img/Discover.png", alt="Discover")

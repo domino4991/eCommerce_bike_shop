@@ -1,9 +1,39 @@
 .banner
-  background: #000
+  overflow: hidden
+  position: relative
 
+.banner__slider
+  position: relative
+
+.owl-prev,
+.owl-next
+  position: absolute
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: 2
+  font-size: 1.6rem !important
+  border: none
+  color: rgba(255,255,255, 0.7) !important
+  background: rgba(0,0,0, 0.3) !important
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  cursor: pointer
+  transition: .5s
+  &:hover
+    background: rgba(0,0,0, 0.5) !important
+    color: rgba(255,255,255, 0.9) !important
+
+.owl-prev
+  left: 5%
+
+.owl-next
+  right: 5%
+  
 .slider__item
   position: relative
   overflow: hidden
+  width: 100%
   
 .slider__caption
   font-family: 'Gloria Hallelujah', sans-serif
@@ -16,6 +46,9 @@
   height: 100%
   object-fit: cover
   filter: brightness(75%)
+
+.slider__img
+  height: 623px
 
 .slider__content,
 .getInTouch__content
