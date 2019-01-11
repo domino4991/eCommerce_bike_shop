@@ -22,9 +22,50 @@ $(function() {
     $('.fa-wish').toggleClass('activeWish');
   })
 
-  $('.tabs__link').on('click', function(){
-    $(this).toggleClass('activeTabs');
-  })
+  var featuredTabs = $('.featured__products .wrap__products'); 
+  
+  featuredTabs.hide().filter(':first').show(); 
+    
+    // Клики по вкладкам.
+    $('.featured__products .tabs__list a').click(function(){
+      featuredTabs.fadeIn(1000).hide(); 
+      featuredTabs.filter(this.hash).show(); 
+        $('.featured__products .tabs__list a').removeClass('activeTabs');
+        $(this).addClass('activeTabs');
+        return false;
+    }).filter(':first').click();
+
+    var widgetTabs = $('.widget__products .widget__wrap-products'); 
+  
+    widgetTabs.hide().filter(':first').show(); 
+      
+      // Клики по вкладкам.
+      $('.widget__products .tabs__list a').click(function(){
+        widgetTabs.fadeIn(1000).hide(); 
+        widgetTabs.filter(this.hash).show(); 
+          $('.widget__products .tabs__list a').removeClass('activeTabs');
+          $(this).addClass('activeTabs');
+          return false;
+      }).filter(':first').click();
+
+    let widgetItems = $('.widget');
+
+    console.log(widgetItems.length);
+    
+
+    if (widgetItems.length < 3) {
+      widgetItems.css({
+        width: '30%'
+      });
+    } else if (widgetItems.length < 2) {
+      widgetItems.css({
+        width: '49%'
+      });
+    }
+
+    // Клики по якорным ссылкам.
+    // $('.tabs-target').click(function(){
+    //     $('#tabs .tabs-nav a[href=' + $(this).data('id')+ ']').click();
 
   $('.flowing-scroll').on( 'click', function(){ 
   let el = $(this);

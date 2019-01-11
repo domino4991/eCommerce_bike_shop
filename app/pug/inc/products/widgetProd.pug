@@ -3,16 +3,60 @@
   .tabs
     ul.tabs__list
       li.tabs__item
-        button.tabs__link Baby Seats
+        a(href="#view__all" class="tabs__link") View All
       li.tabs__item
-        button.tabs__link Bells
+        a(href="#bells" class="tabs__link") Bells
       li.tabs__item
-        button.tabs__link Bottle Cages
+        a(href="#bottle__cages" class="tabs__link") Bottle Cages
       li.tabs__item
-        button.tabs__link Fenders
+        a(href="#fenders" class="tabs__link") Fenders
       li.tabs__item
-        button.tabs__link.activeTabs View All
-  .wrap__products
+        a(href="#baby__seats" class="tabs__link") Baby Seats
+  div(class="widget__wrap-products" id="fenders")
+    .item__products.widget
+      .img__wrap
+        img(class="widget__img" src="../../../img/upload/SureLock_Protector_1_LS.jpg" alt="SureLock Protector 1 LS")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products SureLock Protector 1 LS
+      p.price__products &#36;65.00
+    .item__products.widget
+      .img__wrap
+        img(class="widget__img" src="../../../img/upload/Cyclotron_Mag_II_Trainer.jpg" alt="Cyclotron Mag II Trainer")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products Cyclotron Mag II Trainer
+      p.price__products &#36;180.00
+  div(class="widget__wrap-products" id="bottle__cages")
+    .item__products.widget
+      .img__wrap
+        img(class="widget__img" src="../../../img/upload/bottle.jpg" alt="Bottle")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products Bottle Bicycle
+      p.price__products &#36;20.00
+  div(class="widget__wrap-products" id="bells")
+    .item__products.widget
+      .img__wrap
+        img(class="widget__img" src="../../../img/upload/bell.jpeg" alt="Bell")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products Bell Cateye
+      p.price__products &#36;10.00
+  div(class="widget__wrap-products" id="baby__seats")
+    .item__products.widget
+      .img__wrap
+        img(class="widget__img" src="../../../img/upload/babySeat.png" alt="Baby Seat")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products Baby Seat
+      p.price__products &#36;200.00
+  div(class="widget__wrap-products" id="view__all")
     .item__products.widget
       .img__wrap
         img(class="widget__img" src="../../../img/upload/Rack-It_Disc_Rack.jpg" alt="Rack-It Disc Rack")

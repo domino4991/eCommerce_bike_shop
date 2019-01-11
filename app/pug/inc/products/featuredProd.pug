@@ -3,14 +3,14 @@
   .tabs
     ul.tabs__list
       li.tabs__item
-        button.tabs__link.activeTabs On-Road
+        a(class="tabs__link activeTabs" href="#tab1") On-Road
       li.tabs__item
-        button.tabs__link X-Road
+        a(class="tabs__link" href="#tab2") X-Road
       li.tabs__item
-        button.tabs__link Off-Road
+        a(class="tabs__link" href="#tab3") Off-Road
       li.tabs__item
-        button.tabs__link BMX
-  .wrap__products
+        a(class="tabs__link" href="#tab4") BMX
+  div(class="wrap__products activeTabs" id="tab1")
     .item__products
       .img__wrap
         img(class="featured__img" src="../../../img/upload/bike1.jpg" alt="On road bike")
@@ -35,6 +35,81 @@
           button.hoverBtn-btn Quick view
       p.desc__products FastRoad CoMax
       p.price__products &#36;900.00
+  div(class="wrap__products" id="tab2")
+    .item__products
+      .img__wrap
+        img(class="featured__img" src="../../../img/upload/x-road-bike1.jpg" alt="X-road bike")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products X-Road bicycle 1
+      p.price__products &#36;600.00
+    .item__products
+      .img__wrap
+        img(class="featured__img" src="../../../img/upload/x-road-bike2.jpg" alt="X-road bike")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products X-Road bicycle 2
+      p.price__products &#36;1500.00
+    .item__products
+      .img__wrap
+        img(class="featured__img" src="../../../img/upload/x-road-bike3.jpg" alt="X-road bike")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products X-Road bicycle 3
+      p.price__products &#36;700.00
+  div(class="wrap__products" id="tab3")
+    .item__products
+      .img__wrap
+        img(class="featured__img" src="../../../img/upload/off-road-bike1.jpg" alt="Off-road bike")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products Off-Road bicycle 1
+      p.price__products &#36;300.00
+    .item__products
+      .img__wrap
+        img(class="featured__img" src="../../../img/upload/off-road-bike2.jpg" alt="Off-road bike")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products Off-Road bicycle 2
+      p.price__products &#36;1300.00
+    .item__products
+      .img__wrap
+        img(class="featured__img" src="../../../img/upload/off-road-bike3.jpg" alt="Off-road bike")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products Off-Road bicycle 3
+      p.price__products &#36;1100.00
+  div(class="wrap__products" id="tab4")
+    .item__products
+      .img__wrap
+        img(class="featured__img" src="../../../img/upload/bmx-bike1.jpg" alt="BMX bike")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products BMX bicycle 1
+      p.price__products &#36;500.00
+    .item__products
+      .img__wrap
+        img(class="featured__img" src="../../../img/upload/bmx-bike2.jpg" alt="BMX bike")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products BMX bicycle 2
+      p.price__products &#36;800.00
+    .item__products
+      .img__wrap
+        img(class="featured__img" src="../../../img/upload/bmx-bike3.jpeg" alt="BMX bike")
+        .featured__hoverBtn
+          button.hoverBtn-btn Add to cart
+          button.hoverBtn-btn Quick view
+      p.desc__products BMX bicycle 3
+      p.price__products &#36;1900.00
   .featured__colors
     ul.colors__list
       li(class="colors__item") 
