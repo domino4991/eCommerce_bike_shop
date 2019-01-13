@@ -22,7 +22,7 @@ var gulp = require('gulp'), // Подключаем Gulp
 const path = {
   src: {
     sass: 'app/sass/**/*.sass',
-    pug: 'app/pug/index.pug',
+    pug: 'app/pug/*.pug',
     img: 'app/img/**/*'
   },
   root: 'app'
@@ -60,7 +60,7 @@ gulp.task('sass', function () { // Создаем таск Sass
 });
 
 gulp.task('pug', function () {
-  return gulp.src(path.src.pug)
+  return gulp.src('app/pug/*.pug')
     .pipe(plumber({
       errorHandler: notify.onError(function (err) {
         return {
@@ -72,7 +72,7 @@ gulp.task('pug', function () {
     .pipe(pug({
       pretty: '\t'
     }))
-    .pipe(gulp.dest(path.root));
+    .pipe(gulp.dest('app/'));
 });
 
 gulp.task('browser-sync', function () { // Создаем таск browser-sync

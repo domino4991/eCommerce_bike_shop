@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Document</title>
+		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:300,400,400i,700,900|Roboto+Slab" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="../css/owl.carousel.css"/>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css"/>
+		<link rel="stylesheet" href="css/style.min.css"/>
+		<script src="js/libs.min.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-top">
+					<div class="header-top__lang">
+						<select class="currency" name="curr">
+							<option value="usd">USD</option>
+							<option value="eur">EUR</option>
+							<option value="rub">RUB</option>
+						</select>
+						<select class="lang" name="lang">
+							<option value="eng">English</option>
+							<option value="rus">Russian</option>
+						</select><span class="phone">Call us : (012) 3456 7890</span>
+					</div>
+					<div class="header-top__user">
+						<nav>
+							<ul class="header-top__list">
+								<li class="list__item"><a class="item__link" href="#">My Account </a></li>
+								<li class="list__item"><a class="item__link" href="#">Wishlist</a></li>
+								<li class="list__item"><a class="item__link" href="#">My Cart</a></li>
+								<li class="list__item"><a class="item__link" href="#">Checkout</a></li>
+								<li class="list__item"><a class="item__link" href="#">Login</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header-main">
+					<div class="header-main__logo">
+						<h2 class="logo">bike sport</h2>
+					</div>
+					<div class="header-main__search">
+						<select class="search__category" name="category">
+							<option value="all">All Category</option>
+							<option value="bmx">BMX</option>
+						</select>
+						<form class="header-main__search--form">
+							<input class="header-search__inp" type="search" name="search" placeholder="Search for product"/>
+							<button class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="header-menu">
+				<div class="container menuWrap">
+					<div class="menu">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__list--item"><a class="nav__link" href="#">Home</a></li>
+								<li class="nav__list--item category"><a class="nav__link" href="#">Category</a>
+									<div class="category__dropdown">
+										<div class="dropdown__wrap">
+											<ul class="dropdown__list">
+												<li class="dropdown__item"><a class="dropdown__link" href="on-road.html">On-Road</a></li>
+												<li class="dropdown__item"><a class="dropdown__link" href="#">Off-Road</a></li>
+												<li class="dropdown__item"><a class="dropdown__link" href="#">X-Road</a></li>
+												<li class="dropdown__item"><a class="dropdown__link" href="#">BMX</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="nav__list--item"><a class="nav__link" href="#">Bikes</a></li>
+								<li class="nav__list--item"><a class="nav__link" href="#">Gear</a></li>
+								<li class="nav__list--item"><a class="nav__link" href="#">Blog</a></li>
+								<li class="nav__list--item"><a class="nav__link" href="#">About</a></li>
+								<li class="nav__list--item"><a class="nav__link" href="#">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="wishlist">
+						<ul class="wishlist__list">
+							<li class="wishlist__item">
+								<button class="wishlist__btn"><i class="fa fa-heart" aria-hidden="true"></i></button>
+							</li>
+							<li class="wishlist__item">
+								<button class="wishlist__btn"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+							</li>
+							<li class="wishlist__item">Cart: <span class="price">$199.00</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<article>
+				<div class="container on-road">
+					<section class="on-road__catalog">
+						<div class="wrap-breadcrumb">
+							<p class="breadcrumb">Home -> Category -> ON-ROAD</p>
+						</div>
+						<div class="wrap__category-img"><img class="category__banner" src="../../../img/upload/size.jpg" alt="dh"/></div>
+						<div class="catalog__filter">
+							<div class="catalog__views">
+								<ul class="views__list">
+									<li class="views__item"><a class="views__btn activeViews" href="#grid"><i class="fa fa-th-large" aria-hidden="true"></i></a></li>
+									<li class="views__item"><a class="views__btn" href="#list"><i class="fa fa-th-list" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+							<div class="catalog__sort">
+								<ul class="sort__list">
+									<li class="sort__item">
+										<select class="items" name="items" id="items">
+											<option value="12items" selected="selected">12 items/page</option>
+											<option value="24items">24 items/page</option>
+											<option value="48items">48 items/page</option>
+											<option value="all">All items/page</option>
+										</select>
+									</li>
+									<li class="sort__item">
+										<label class="labelSortBy" for="sortBy">Sort By:</label>
+										<select class="sortBy" name="sortBy" id="sortBy">
+											<option value="position" selected="selected">Position</option>
+											<option value="priceAscending">Price ascending</option>
+											<option value="priceDescending">Price descending</option>
+											<option value="NewProduct">New product</option>
+											<option value="OldProduct">Old product</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="wrap-tabs">
+							<div class="catalog__wrap-products activeViews" id="grid">
+								<div class="item__products catalog">
+									<div class="img__wrap"><img class="catalog__img" src="../../../img/upload/Rack-It_Disc_Rack.jpg" alt="Rack-It Disc Rack"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Rack-It Disc Rack</p>
+									<p class="price__products price__catalog">&#36;1100.00</p>
+									<ul class="colors__list catalog__item-color">
+										<li class="colors__item"> 
+											<button class="crlBlue colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlOrange colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlViolet colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlGrey colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlBrown colors__btn"></button>
+										</li>
+									</ul>
+								</div>
+								<div class="item__products catalog">
+									<div class="img__wrap"><img class="catalog__img" src="../../../img/upload/P-TRX1_29er_Alloy_Trail.jpg" alt="P-TRX1 29er Alloy Trail"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">P-TRX1 29er Alloy Trail</p>
+									<p class="price__products price__catalog">&#36;320.00</p>
+									<ul class="colors__list catalog__item-color">
+										<li class="colors__item"> 
+											<button class="crlBlue colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlOrange colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlViolet colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlGrey colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlBrown colors__btn"></button>
+										</li>
+									</ul>
+								</div>
+								<div class="item__products catalog">
+									<div class="img__wrap"><img class="catalog__img" src="../../../img/upload/SureLock_Protector_1_LS.jpg" alt="SureLock Protector 1 LS"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">SureLock Protector 1 LS</p>
+									<p class="price__products price__catalog">&#36;65.00</p>
+									<ul class="colors__list catalog__item-color">
+										<li class="colors__item"> 
+											<button class="crlBlue colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlOrange colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlViolet colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlGrey colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlBrown colors__btn"></button>
+										</li>
+									</ul>
+								</div>
+								<div class="item__products catalog">
+									<div class="img__wrap"><img class="catalog__img" src="../../../img/upload/Liv giant_Sport_Pedals.jpg" alt="Liv/giant Sport Pedals"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Liv/giant Sport Pedals</p>
+									<p class="price__products price__catalog">&#36;48.00</p>
+									<ul class="colors__list catalog__item-color">
+										<li class="colors__item"> 
+											<button class="crlBlue colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlOrange colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlViolet colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlGrey colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlBrown colors__btn"></button>
+										</li>
+									</ul>
+								</div>
+								<div class="item__products catalog">
+									<div class="img__wrap"><img class="catalog__img" src="../../../img/upload/Liv_Connect_Forward.jpg" alt="Liv Connect Forward"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Liv Connect Forward</p>
+									<p class="price__products price__catalog">&#36;15.00</p>
+									<ul class="colors__list catalog__item-color">
+										<li class="colors__item"> 
+											<button class="crlBlue colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlOrange colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlViolet colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlGrey colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlBrown colors__btn"></button>
+										</li>
+									</ul>
+								</div>
+								<div class="item__products catalog">
+									<div class="img__wrap"><img class="catalog__img" src="../../../img/upload/Cyclotron_Mag_II_Trainer.jpg" alt="Cyclotron Mag II Trainer"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Cyclotron Mag II Trainer</p>
+									<p class="price__products price__catalog">&#36;180.00</p>
+									<ul class="colors__list catalog__item-color">
+										<li class="colors__item"> 
+											<button class="crlBlue colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlOrange colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlViolet colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlGrey colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlBrown colors__btn"></button>
+										</li>
+									</ul>
+								</div>
+								<div class="item__products catalog">
+									<div class="img__wrap"><img class="catalog__img" src="../../../img/upload/Comfort_DX_Grips.jpg" alt="Comfort DX Grips"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Comfort DX Grips</p>
+									<p class="price__products price__catalog">&#36;12.00</p>
+									<ul class="colors__list catalog__item-color">
+										<li class="colors__item"> 
+											<button class="crlBlue colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlOrange colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlViolet colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlGrey colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlBrown colors__btn"></button>
+										</li>
+									</ul>
+								</div>
+								<div class="item__products catalog">
+									<div class="img__wrap"><img class="catalog__img" src="../../../img/upload/Liv_Rev_Helmet.jpg" alt="Liv Rev Helmete"/>
+										<div class="featured__hoverBtn">
+											<button class="hoverBtn-btn">Add to cart</button>
+											<button class="hoverBtn-btn">Quick view</button>
+										</div>
+									</div>
+									<p class="desc__products">Liv Rev Helmet</p>
+									<p class="price__products price__catalog">&#36;150.00</p>
+									<ul class="colors__list catalog__item-color">
+										<li class="colors__item"> 
+											<button class="crlBlue colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlOrange colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlViolet colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlGrey colors__btn"></button>
+										</li>
+										<li class="colors__item">
+											<button class="crlBrown colors__btn"></button>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="catalog__wrap-products" id="list">
+								<div class="catalog-list">
+									<div class="wrap-catalogList__img wrap__catalogList-item"><img class="catalogList__img" src="img/upload/bike1.jpg" alt="Giant"/></div>
+									<div class="wrap-catalogList__desc wrap__catalogList-item">
+										<h2 class="catalogList__caption">Liv Race Day Short Finger</h2>
+										<ul class="desc__list">
+											<li class="desc__list-item priceItem">&#36;30.00</li>
+											<li class="desc__list-item ratingItem">*****</li>
+										</ul>
+										<ul class="catalog__list-color">
+											<li class="colors__item"> 
+												<button class="crlBlue colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlOrange colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlViolet colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlGrey colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlBrown colors__btn"></button>
+											</li>
+										</ul>
+										<p class="catalogList__desc">Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.</p>
+										<ul class="btn__list">
+											<li class="btn__item">
+												<button class="catalogAddToCart catalog-btn">Add to cart</button>
+											</li>
+											<li class="btn__item">
+												<button class="catalogAddWishlist catalog-btn"><i class="fa fa-heart fa-wish" aria-hidden="true"></i> Add to wishlist</button>
+											</li>
+											<li class="btn__item">
+												<button class="catalogQuickView catalog-btn"><i class="fa fa-eye fa-wish" aria-hidden="true"></i> Quick view</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="catalog-list">
+									<div class="wrap-catalogList__img wrap__catalogList-item"><img class="catalogList__img" src="img/upload/bike1.jpg" alt="Giant"/></div>
+									<div class="wrap-catalogList__desc wrap__catalogList-item">
+										<h2 class="catalogList__caption">Liv Race Day Short Finger</h2>
+										<ul class="desc__list">
+											<li class="desc__list-item priceItem">&#36;30.00</li>
+											<li class="desc__list-item ratingItem">*****</li>
+										</ul>
+										<ul class="catalog__list-color">
+											<li class="colors__item"> 
+												<button class="crlBlue colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlOrange colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlViolet colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlGrey colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlBrown colors__btn"></button>
+											</li>
+										</ul>
+										<p class="catalogList__desc">Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.</p>
+										<ul class="btn__list">
+											<li class="btn__item">
+												<button class="catalogAddToCart catalog-btn">Add to cart</button>
+											</li>
+											<li class="btn__item">
+												<button class="catalogAddWishlist catalog-btn"><i class="fa fa-heart fa-wish" aria-hidden="true"></i> Add to wishlist</button>
+											</li>
+											<li class="btn__item">
+												<button class="catalogQuickView catalog-btn"><i class="fa fa-eye fa-wish" aria-hidden="true"></i> Quick view</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="catalog-list">
+									<div class="wrap-catalogList__img wrap__catalogList-item"><img class="catalogList__img" src="img/upload/bike1.jpg" alt="Giant"/></div>
+									<div class="wrap-catalogList__desc wrap__catalogList-item">
+										<h2 class="catalogList__caption">Liv Race Day Short Finger</h2>
+										<ul class="desc__list">
+											<li class="desc__list-item priceItem">&#36;30.00</li>
+											<li class="desc__list-item ratingItem">*****</li>
+										</ul>
+										<ul class="catalog__list-color">
+											<li class="colors__item"> 
+												<button class="crlBlue colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlOrange colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlViolet colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlGrey colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlBrown colors__btn"></button>
+											</li>
+										</ul>
+										<p class="catalogList__desc">Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.</p>
+										<ul class="btn__list">
+											<li class="btn__item">
+												<button class="catalogAddToCart catalog-btn">Add to cart</button>
+											</li>
+											<li class="btn__item">
+												<button class="catalogAddWishlist catalog-btn"><i class="fa fa-heart fa-wish" aria-hidden="true"></i> Add to wishlist</button>
+											</li>
+											<li class="btn__item">
+												<button class="catalogQuickView catalog-btn"><i class="fa fa-eye fa-wish" aria-hidden="true"></i> Quick view</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="catalog-list">
+									<div class="wrap-catalogList__img wrap__catalogList-item"><img class="catalogList__img" src="img/upload/bike1.jpg" alt="Giant"/></div>
+									<div class="wrap-catalogList__desc wrap__catalogList-item">
+										<h2 class="catalogList__caption">Liv Race Day Short Finger</h2>
+										<ul class="desc__list">
+											<li class="desc__list-item priceItem">&#36;30.00</li>
+											<li class="desc__list-item ratingItem">*****</li>
+										</ul>
+										<ul class="catalog__list-color">
+											<li class="colors__item"> 
+												<button class="crlBlue colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlOrange colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlViolet colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlGrey colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlBrown colors__btn"></button>
+											</li>
+										</ul>
+										<p class="catalogList__desc">Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.</p>
+										<ul class="btn__list">
+											<li class="btn__item">
+												<button class="catalogAddToCart catalog-btn">Add to cart</button>
+											</li>
+											<li class="btn__item">
+												<button class="catalogAddWishlist catalog-btn"><i class="fa fa-heart fa-wish" aria-hidden="true"></i> Add to wishlist</button>
+											</li>
+											<li class="btn__item">
+												<button class="catalogQuickView catalog-btn"><i class="fa fa-eye fa-wish" aria-hidden="true"></i> Quick view</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="catalog-list">
+									<div class="wrap-catalogList__img wrap__catalogList-item"><img class="catalogList__img" src="img/upload/bike1.jpg" alt="Giant"/></div>
+									<div class="wrap-catalogList__desc wrap__catalogList-item">
+										<h2 class="catalogList__caption">Liv Race Day Short Finger</h2>
+										<ul class="desc__list">
+											<li class="desc__list-item priceItem">&#36;30.00</li>
+											<li class="desc__list-item ratingItem">*****</li>
+										</ul>
+										<ul class="catalog__list-color">
+											<li class="colors__item"> 
+												<button class="crlBlue colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlOrange colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlViolet colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlGrey colors__btn"></button>
+											</li>
+											<li class="colors__item">
+												<button class="crlBrown colors__btn"></button>
+											</li>
+										</ul>
+										<p class="catalogList__desc">Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.</p>
+										<ul class="btn__list">
+											<li class="btn__item">
+												<button class="catalogAddToCart catalog-btn">Add to cart</button>
+											</li>
+											<li class="btn__item">
+												<button class="catalogAddWishlist catalog-btn"><i class="fa fa-heart fa-wish" aria-hidden="true"></i> Add to wishlist</button>
+											</li>
+											<li class="btn__item">
+												<button class="catalogQuickView catalog-btn"><i class="fa fa-eye fa-wish" aria-hidden="true"></i> Quick view</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<aside class="sidebar">
+						<h2 class="sidebar__caption">Bikes Product</h2>
+						<div class="product__acc">
+							<p class="product__category">On-road
+								<ul class="product__list">
+									<li class="product-list__item">
+										<button class="product__type">Aero race <span>(3)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">City<span>(3)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">Comfort<span>(1)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">Cruiser<span>(1)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">Endurance<span>(4)</span></button>
+									</li>
+								</ul>
+							</p>
+							<p class="product__category">X-road
+								<ul class="product__list">
+									<li class="product-list__item">
+										<button class="product__type">Aero race <span>(3)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">City<span>(3)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">Comfort<span>(1)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">Cruiser<span>(1)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">Endurance<span>(4)</span></button>
+									</li>
+								</ul>
+							</p>
+							<p class="product__category">Off-road
+								<ul class="product__list">
+									<li class="product-list__item">
+										<button class="product__type">Aero race <span>(3)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">City<span>(3)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">Comfort<span>(1)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">Cruiser<span>(1)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">Endurance<span>(4)</span></button>
+									</li>
+								</ul>
+							</p>
+							<p class="product__category">BMX
+								<ul class="product__list">
+									<li class="product-list__item">
+										<button class="product__type">Aero race <span>(3)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">City<span>(3)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">Comfort<span>(1)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">Cruiser<span>(1)</span></button>
+									</li>
+									<li class="product-list__item">
+										<button class="product__type">Endurance<span>(4)</span></button>
+									</li>
+								</ul>
+							</p>
+						</div>
+						<h2 class="sidebar__caption catalog__caption">Catalog</h2>
+						<div class="wrap-price__filter catalog__acc">
+							<p class="price__filter acc__caption">Price filter
+								<ul class="filter__list acc__body">
+									<li class="filter__item">
+										<input class="filter__inp" type="text" name="filter_range" value=""/>
+									</li>
+								</ul>
+							</p>
+							<p class="color__filter acc__caption">Color filter
+								<ul class="color__list acc__body">
+									<li class="color__item"> 
+										<button class="crlRed color__filter-btn"></button>
+									</li>
+									<li class="color__item">
+										<button class="crlBlue color__filter-btn"></button>
+									</li>
+									<li class="color__item">
+										<button class="crlViolet color__filter-btn"></button>
+									</li>
+									<li class="color__item">
+										<button class="crlGreen color__filter-btn"></button>
+									</li>
+									<li class="color__item">
+										<button class="crlAqua color__filter-btn"></button>
+									</li>
+									<li class="color__item">
+										<button class="crlLightGreen color__filter-btn"></button>
+									</li>
+									<li class="color__item">
+										<button class="crlOrange color__filter-btn"></button>
+									</li>
+								</ul>
+							</p>
+							<p class="size__filter acc__caption">Size filter
+								<ul class="size__list acc__body">
+									<li class="size__item">
+										<button class="size__type">S - Small <span>(3)</span></button>
+									</li>
+									<li class="size__item">
+										<button class="size__type">M - Medium <span>(3)</span></button>
+									</li>
+									<li class="size__item">
+										<button class="size__type">L - Large <span>(1)</span></button>
+									</li>
+									<li class="size__item">
+										<button class="size__type">XL - Extra Large <span>(1)</span></button>
+									</li>
+									<li class="size__item">
+										<button class="size__type">XXL - Extra Extra Large <span>(4)</span></button>
+									</li>
+								</ul>
+							</p>
+							<p class="brand__filter acc__caption">Brand filter
+								<ul class="brand__list acc__body">
+									<li class="brand__item">
+										<button class="brand__type">Trek <span>(24)</span></button>
+									</li>
+									<li class="brand__item">
+										<button class="brand__type">Cannondale <span>(18)</span></button>
+									</li>
+									<li class="brand__item">
+										<button class="brand__type">Jamis <span>(9)</span></button>
+									</li>
+									<li class="brand__item">
+										<button class="brand__type">Specialized <span>(39)</span></button>
+									</li>
+									<li class="brand__item">
+										<button class="brand__type">Giant <span>(12)</span></button>
+									</li>
+									<li class="brand__item">
+										<button class="brand__type">Cervelo <span>(39)</span></button>
+									</li>
+									<li class="brand__item">
+										<button class="brand__type">Bianchi <span>(12)</span></button>
+									</li>
+								</ul>
+							</p>
+							<h2 class="sidebar__caption sidebar-product__caption">Featured Product</h2>
+							<div class="wrap-fearured__product">
+								<div class="sidebar__product">
+									<div class="sidebar__product-item"><img class="product-item__img" src="img/upload/bike1.jpg" alt="Giant"/></div>
+									<div class="sidebar__product-item">
+										<p class="sidebarModelBike">Propel Advanced Pro Frameset</p>
+										<p class="sidebarModelRating">* * * * *</p>
+										<p class="sidebarModelPrice">&#36;2,290.00</p>
+									</div>
+								</div>
+								<div class="sidebar__product">
+									<div class="sidebar__product-item"><img class="product-item__img" src="img/upload/bike2.jpg" alt="Giant"/></div>
+									<div class="sidebar__product-item">
+										<p class="sidebarModelBike">Propel Advanced Pro Frameset</p>
+										<p class="sidebarModelRating">* * * * *</p>
+										<p class="sidebarModelPrice">&#36;2,290.00</p>
+									</div>
+								</div>
+								<div class="sidebar__product">
+									<div class="sidebar__product-item"><img class="product-item__img" src="img/upload/bike3.jpg" alt="Giant"/></div>
+									<div class="sidebar__product-item">
+										<p class="sidebarModelBike">Propel Advanced Pro Frameset</p>
+										<p class="sidebarModelRating">* * * * *</p>
+										<p class="sidebarModelPrice">&#36;2,290.00</p>
+									</div>
+								</div>
+								<div class="sidebar__product">
+									<div class="sidebar__product-item"><img class="product-item__img" src="img/upload/bike4.jpg" alt="Giant"/></div>
+									<div class="sidebar__product-item">
+										<p class="sidebarModelBike">Propel Advanced Pro Frameset</p>
+										<p class="sidebarModelRating">* * * * *</p>
+										<p class="sidebarModelPrice">&#36;2,290.00</p>
+									</div>
+								</div>
+								<div class="sidebar__product">
+									<div class="sidebar__product-item"><img class="product-item__img" src="img/upload/bmx-bike1.jpg" alt="Giant"/></div>
+									<div class="sidebar__product-item">
+										<p class="sidebarModelBike">Propel Advanced Pro Frameset</p>
+										<p class="sidebarModelRating">* * * * *</p>
+										<p class="sidebarModelPrice">&#36;2,290.00</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</article>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footerInfo__wrap">
+					<div class="footerInfo__item contact__item">
+						<h2 class="item__caption">Contact info</h2>
+						<p class="item__desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+						<p class="footerInfo__address"><span>Address:</span> 123 Sky Tower address name, Los Algeles, USA, Country, 01234</p>
+						<p class="footerInfo__phone"><span>Phone:</span> (012) 345 6789</p>
+						<p class="footerInfo__email"><span>E-mail:</span> info@lorem.com</p>
+						<form class="form" action="#">
+							<input class="email__inp" type="email" name="email" placeholder="Enter your email"/>
+							<button class="subscribe">Subscribe</button>
+						</form>
+						<div class="social__media">
+							<ul class="social__list">
+								<li class="social__item"><a class="social__link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li class="social__item"><a class="social__link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li class="social__item"><a class="social__link" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								<li class="social__item"><a class="social__link" href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+								<li class="social__item"><a class="social__link" href="#"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+								<li class="social__item"><a class="social__link" href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footerInfo__item commentsMenu__wrap">
+						<div class="comments__item commentsMenu__item">
+							<h2 class="item__caption">What clients say?</h2>
+							<div class="client__wrap">
+								<div class="client__photo"><img src="" alt="Client Photo"/></div>
+								<div class="client__comment">
+									<p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<p class="client__name">Kathy Young</p>
+								</div>
+							</div>
+						</div>
+						<div class="commentsMenu__item">
+							<div class="menu__wrap">
+								<div class="menu__item">
+									<h2 class="item__caption">how to buy</h2>
+									<nav class="footer__nav">
+										<ul class="footer__nav--list">
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Contact Us</a></li>
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Returns</a></li>
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Site Map</a></li>
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Brands</a></li>
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Gifts Vouchers</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="menu__item">
+									<h2 class="item__caption">My account</h2>
+									<nav class="footer__nav">
+										<ul class="footer__nav--list">
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">My Account</a></li>
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Order History</a></li>
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Wish List</a></li>
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Newsletter</a></li>
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Specials</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="menu__item">
+									<h2 class="item__caption">Information</h2>
+									<nav class="footer__nav">
+										<ul class="footer__nav--list">
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">About Us</a></li>
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Contact Us</a></li>
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Term & Conditions</a></li>
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Privacy Policy</a></li>
+											<li class="footer__nav--item"><a class="footer__nav--link" href="#">Orders and Returns</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="footer__bottom--wrap">
+						<div class="footer__bottom--item">
+							<p class="footer__bottom--copyright">Copyright © 2015 <span>Magento Themes</span> by TemPlaza. All rights reserved.</p>
+						</div>
+						<div class="footer__bottom--item">
+							<ul class="payments__list">
+								<li class="payments__item"><a class="payments__link" href="#"><img src="../../../img/Visa.png" alt="Visa card"/></a></li>
+								<li class="payments__item"><a class="payments__link" href="#"><img src="../../../img/Intersection.png" alt="Master card"/></a></li>
+								<li class="payments__item"><a class="payments__link" href="#"><img src="../../../img/ebay.png" alt="eBay"/></a></li>
+								<li class="payments__item"><a class="payments__link" href="#"><img src="../../../img/Amazon.png" alt="Amazon"/></a></li>
+								<li class="payments__item"><a class="payments__link" href="#"><img src="../../../img/Discover.png" alt="Discover"/></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

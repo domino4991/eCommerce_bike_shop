@@ -1,0 +1,330 @@
+.on-road
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 3rem
+  
+.on-road__catalog
+  width: 74%
+  margin-right: 3rem
+
+.breadcrumb
+  +use-latoFont(1.6rem, $txtBlack, 300)
+
+.wrap__category-img
+  margin-top: 1.7rem
+
+.category__banner
+  width: 100%
+  object-fit: fill
+  height: 27.1rem
+
+.catalog__filter
+  background-color: #fafafa
+  border: 1px solid #eeeeee
+  display: flex
+  justify-content: space-between
+  margin-top: 2.5rem
+
+.views__list,
+.sort__list
+  margin: 0
+  padding: 0
+  display: flex
+  justify-content: flex-start
+  height: 100%
+
+.sort__list
+  justify-content: flex-end
+
+.views__item,
+.sort__item
+  list-style: none
+  border-right: 1px solid #e0e0e0
+  padding: 1.8rem 2rem
+
+.views__btn
+  border: none
+  background: none
+  cursor: pointer
+  color: #9e9e9e
+  font-size: 1.8rem
+
+.sort__item
+  border-left: 1px solid #e0e0e0
+  border-right: none
+  position: relative
+  padding-right: 3.5rem
+  padding-left: 1.5rem 
+  &:after
+    content: ""
+    border-style: solid
+    border-width: 5px 5px 0 5px
+    border-color: $txtBlack transparent transparent transparent
+    position: absolute
+    top: 50%
+    right: 15px
+    margin-top: -2px
+
+.items,
+.sortBy
+  +use-latoFont(1.6rem, #9e9e9e, 300)
+  border: none
+  background: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+.items:focus
+  outline: none
+
+.labelSortBy
+  +use-latoFont(1.6rem, $txtBlack, 300)
+
+
+.catalog__wrap-products
+  margin-top: 4rem
+
+.catalog
+  display: inline-block
+  width: 31%
+  margin-bottom: 3rem
+  margin-left: 2.7rem
+  transition: .5s
+  &__img
+    width: 100%
+    height: 240px
+    object-fit: contain
+    transition: .6s
+  &:nth-child(3n+1)
+    margin-left: 0
+  &:hover
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.24)
+    transform: scale(1.1)
+
+.catalog__item-color
+  transform: scale(0)
+  transition: .5s
+  padding-bottom: 2rem
+
+.catalog:hover .catalog__item-color
+  transform: scale(1)
+
+.price__catalog
+  margin-top: 2rem
+  margin-bottom: 1.5rem
+
+.sidebar
+  width: 23%
+  &__caption
+    +use-latoFont(1.6rem, $tabsRed, 700)
+    text-transform: uppercase
+
+.product__acc,
+.catalog__acc,
+.wrap-fearured__product
+  margin-top: 1rem
+  border-top: 2px solid #e0e0e0
+
+.product__category,
+.price__filter,
+.color__filter,
+.size__filter,
+.brand__filter
+  +use-latoFont(1.6rem, $txtBlack, 300)
+  text-transform: uppercase
+  margin-top: 3rem
+  position: relative
+  cursor: pointer
+  &:after
+    content: ""
+    border-style: solid
+    border-width: 5px 5px 0 5px
+    border-color: $txtBlack transparent transparent transparent
+    position: absolute
+    top: 50%
+    right: 0
+    margin-top: -2px
+
+.price__filter,
+.color__filter,
+.size__filter,
+.brand__filter
+  font-weight: 700
+
+.product__list,
+.filter__list,
+.color__list,
+.size__list,
+.brand__list
+  margin: 0 0 0 2rem
+  padding: 0
+  display: none
+
+.product-list__item,
+.size__item,
+.brand__item
+  list-style: none
+  margin-top: 2rem
+  width: 100%
+
+.product__type,
+.size__type,
+.brand__type
+  background: none
+  border: none
+  +use-latoFont(1.6rem, $txtBlack, 300)
+  cursor: pointer
+  & span
+    color: #e0e0e0
+    margin-left: 1rem
+
+.catalog__caption
+  margin-top: 7rem
+
+.filter__list
+  margin: 1rem 0 0 1rem
+  display: block
+
+.filter__item
+  list-style: none
+
+.color__list
+  display: block
+  margin: 2rem 0 0 0
+
+.color__item
+  display: inline-block
+  margin-right: 1rem
+
+.crlRed
+  background: #f44336
+
+.crlGreen
+  background: #009688
+
+.crlAqua
+  background: #00e5ff
+
+.crlLightGreen
+  background: #cddc39
+
+.color__filter-btn
+  border: none
+  width: 20px
+  height: 20px
+  cursor: pointer
+
+.size__list,
+.brand__list
+  display: block
+
+.sidebar-product__caption
+  margin-top: 6.8rem
+
+.wrap-fearured__product
+  padding-top: 2rem
+
+.sidebar__product
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-bottom: 2rem
+
+.sidebar__product-item
+  width: 49%
+
+.product-item__img
+  width: 100%
+  height: 100%
+  object-fit: contain
+
+.sidebarModelBike,
+.sidebarModelPrice
+  +use-latoFont(1.6rem, $txtBlack, 300)
+
+.sidebarModelPrice
+  color: $priceRed
+
+.sidebarModelRating
+  font-size: 1.3rem
+
+// tabs
+
+.wrap-tabs
+  position: relative
+
+.activeViews
+  color: $priceRed
+
+.catalog-list
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 2.9rem 3.3rem 2.9rem 0
+  margin-bottom: 3rem
+  transition: .5s
+  &:hover
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.24)
+    transform: scale(1.05)
+
+.wrap-catalogList__img
+  width: 33%
+
+.wrap-catalogList__desc
+  width: 62%
+
+.catalogList__img
+  width: 100%
+  height: 100%
+  object-fit: contain
+
+.catalogList__caption
+  +use-latoFont(1.9rem, $txtBlack, 300)
+
+.desc__list
+  margin: 2rem 0 0 0
+  padding: 0
+
+.desc__list-item
+  list-style: none
+  display: inline-block
+  margin-right: 6rem
+
+.priceItem
+  +use-latoFont(1.6rem, $priceRed, 300)
+
+.ratingItem
+  +use-latoFont(1.9rem, $txtBlack, 300)
+
+.catalog__list-color
+  margin: 2rem 0 2rem 0
+  padding: 0
+
+.catalogList__desc
+  +use-latoFont(1.6rem, $txtBlack, 300)
+  margin-bottom: 3.7rem
+
+.btn__list
+  margin: 0
+  padding: 0
+
+.btn__item
+  list-style: none
+  display: inline-block
+  margin-right: 1rem
+  &:nth-child(2)
+    border-right: 2px solid #e0e0e0
+
+.catalog-btn
+  background: none
+  border: none
+  cursor: pointer
+  +use-latoFont(1.6rem, #9e9e9e, 300)
+  padding: 1.3rem 2.7rem
+
+.catalogAddToCart
+  background: $txtBlack
+  border: none
+  color: #fff
+

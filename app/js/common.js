@@ -21,7 +21,7 @@ $(function() {
   $('.addWishlist').on('click', function(){
     $('.fa-wish').toggleClass('activeWish');
   })
-
+// tabs
   var featuredTabs = $('.featured__products .wrap__products'); 
   
   featuredTabs.hide().filter(':first').show(); 
@@ -48,24 +48,20 @@ $(function() {
           return false;
       }).filter(':first').click();
 
-    let widgetItems = $('.widget');
+  var wrapTabs = $('.wrap-tabs .catalog__wrap-products'); 
 
-    console.log(widgetItems.length);
+  wrapTabs.hide().filter(':first').show(); 
     
+    // Клики по вкладкам.
+    $('.catalog__views a').click(function(){
+      wrapTabs.fadeIn(1000).hide(); 
+      wrapTabs.filter(this.hash).show(); 
+        $('.catalog__views a').removeClass('activeViews');
+        $(this).addClass('activeViews');
+        return false;
+    }).filter(':first').click();
 
-    if (widgetItems.length < 3) {
-      widgetItems.css({
-        width: '30%'
-      });
-    } else if (widgetItems.length < 2) {
-      widgetItems.css({
-        width: '49%'
-      });
-    }
-
-    // Клики по якорным ссылкам.
-    // $('.tabs-target').click(function(){
-    //     $('#tabs .tabs-nav a[href=' + $(this).data('id')+ ']').click();
+// tabs end
 
   $('.flowing-scroll').on( 'click', function(){ 
   let el = $(this);
@@ -79,23 +75,19 @@ $(function() {
   return false;
   });
 
-  // let target = $('.tour');
-  // let targetPos = target.offset().top;
-  // let winHeight = $(window).height();
-  // let scrollToElem = targetPos - winHeight;
-  // $(window).scroll(function(){
-  //   var winScrollTop = $(this).scrollTop();
-  //   if(winScrollTop > scrollToElem){
-  //     $('.scroll-top').css({
-  //       display: 'block'
-  //     });
-  //   } else {
-  //     $('.scroll-top').css({
-  //           display: 'none'
-  //     });
-  //   }
-  // });
-    
-    // $("#phone").mask("+999 (999) 999-999");
-    // new WOW().init();
+  $('.product__acc .product__category').on('click', function() {
+    $('.product__acc .product__list').not($(this).next()).slideUp();
+    $(this).next().slideToggle();
+  })
+
+  $('.catalog__acc .acc__caption').on('click', function() {
+    $(this).next().slideToggle();
+  })
+
+  $('.filter__inp').ionRangeSlider({
+    type: 'double',
+    min: 0,
+    max: 10000,
+    prefix: '$'
+  });
 });
