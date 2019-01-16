@@ -84,6 +84,47 @@ $(function() {
     $(this).next().slideToggle();
   })
 
+// rating
+  function rating(elem) {
+    let ratingLine = $('.wrap-modelRating .rating__item');
+    ratingLine.removeClass('activeStar');
+    elem.addClass('activeStar');
+    for(let i = 0, rLen = ratingLine.length; i < rLen; i++) {
+      if($(ratingLine[i]).hasClass('activeStar')){
+        break;
+      } else {
+        $(ratingLine[i]).addClass('activeStar');
+      }
+    }
+  }
+
+  $('.wrap-modelRating .rating__item').click(function(){
+    let cur = $(this),
+        ratingLine = $('.wrap-modelRating .rating__item');
+    ratingLine.removeClass('click-activeStar');
+    rating(cur);
+    cur.addClass('click-activeStar');
+  })
+
+  $('.wrap-modelRating .rating__item')
+      .mouseover(function(){
+        let cur = $(this);
+        rating(cur);
+        cur.addClass('activeStar');
+      })
+      .mouseout(function(){
+        let ratingLine = $('.wrap-modelRating .rating__item');
+        ratingLine.addClass('activeStar');
+        for(let i = 5; i > 0; i--) {
+          if($(ratingLine[i]).hasClass('click-activeStar')) {
+            break;
+          } else {
+            $(ratingLine[i]).removeClass('activeStar');
+          }
+        }
+      })
+// End
+
   $('.filter__inp').ionRangeSlider({
     type: 'double',
     min: 0,

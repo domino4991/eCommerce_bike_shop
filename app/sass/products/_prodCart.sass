@@ -48,6 +48,19 @@
 .modelRating
   +use-latoFont(3rem, $txtBlack, 700)
 
+.wrap-modelRating
+  display: flex
+  justify-content: flex-start
+  margin: 2rem 0
+
+.rating__item
+  font-size: 1.9rem
+  cursor: pointer
+
+.activeStar:before
+  transition: .7s
+  content: '\f005'
+
 .modelPrice
   +use-latoFont(3rem, $priceRed, 700)
 
