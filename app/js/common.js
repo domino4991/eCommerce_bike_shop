@@ -60,6 +60,18 @@ $(function() {
         $(this).addClass('activeViews');
         return false;
     }).filter(':first').click();
+    
+
+  var productInfoTab = $('.product__info .info-item');
+  productInfoTab.hide().filter(':first').show();
+
+  $('.product__info .info-list a').click(function(){
+    productInfoTab.fadeIn(1000).hide(); 
+    productInfoTab.filter(this.hash).show(); 
+      $('.product__info .info-list a').removeClass('activeTab');
+      $(this).addClass('activeTab');
+      return false;
+  }).filter(':first').click();
 
 // tabs end
 
@@ -125,6 +137,42 @@ $(function() {
       })
 // End
 
+// Выбор цвета продукта
+  $('.selected-color').on('click', function() {
+    let attrSelectedColor = $('.selected-color');
+    $(this).toggleClass('activeSelect--click')
+    $('.select-color__list').toggleClass('activeSelect');
+  })
+
+  $('.select-color__item').on('click', function() {
+    let delHtml = $('.selected-color'),
+        attrColor = $(this).attr('data-color');
+    delHtml.empty();
+    $(this).clone().appendTo(delHtml);
+    $('.selected-color').attr('data-color-selected', attrColor);
+    $('.select-color__list').removeClass('activeSelect');
+    delHtml.removeClass('activeSelect--click');
+  })
+  
+// End
+
+// Кнопки количества товаров
+  var count = $('.qty__count').val();
+  $('.qty__plus').on('click', function() {
+    count++;
+    $('.qty__count').val(count);
+  })
+  $('.qty__minus').on('click', function() {
+    if(count == 1) {
+      $('.qty__minus').attr('disabled');
+    } else {
+      count--;
+      $('.qty__count').val(count);
+    }
+  })
+
+
+// End
   $('.filter__inp').ionRangeSlider({
     type: 'double',
     min: 0,

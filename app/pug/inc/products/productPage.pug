@@ -1,0 +1,100 @@
+section.personal-product__page
+  .container
+    .personal-product
+      .personal-product__item
+        img(src="img/upload/bike1.jpg", alt="Propel Advanced SL 0" class="personal-product__img")
+        img(src="img/upload/bike1.jpg", alt="Propel Advanced SL 0" class="personal-product__img" style="display: none")
+        img(src="img/upload/bike1.jpg", alt="Propel Advanced SL 0" class="personal-product__img" style="display: none")
+        ul.dots-slider
+          li.dots-item
+          li.dots-item.dots-active
+          li.dots-item
+        .social-media
+          ul.social-media__list
+            li.social-media__item
+              a(href="#" class="social-media__link")
+                i(class="fa fa-facebook" aria-hidden="true")
+            li.social-media__item
+              a(href="#" class="social-media__link")
+                i(class="fa fa-twitter" aria-hidden="true")
+            li.social-media__item
+              a(href="#" class="social-media__link")
+                i(class="fa fa-google-plus" aria-hidden="true")
+            li.social-media__item
+              a(href="#" class="social-media__link")
+                i(class="fa fa-dribbble" aria-hidden="true")
+      .personal-product__item
+        h2.personal-product__caption Propel Advanced SL 0
+        .wrap-modelRating
+              div(class="rating__item fa fa-star-o" data-rate="1")
+              div(class="rating__item fa fa-star-o" data-rate="2")
+              div(class="rating__item fa fa-star-o" data-rate="3")
+              div(class="rating__item fa fa-star-o" data-rate="4")
+              div(class="rating__item fa fa-star-o" data-rate="5")
+        ul.personal-product__list--top
+          li.personal-product__list--item.modelPrice &#36;2,290.00
+          li.personal-product__list--item.availab Availability: #[span(class="availabSpan") In stock]
+        p.personal-product__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        ul.personal-product__list--middle
+          li.personal-product__list--item.colorInp Color: 
+            .select-color
+              div(data-color-selected="blue").selected-color #[span(class="spanBlue")] Blue 
+              ul.select-color__list
+                li(data-color="blue").select-color__item #[span(class="spanBlue")] Blue 
+                li(data-color="red").select-color__item #[span(class="spanRed")] Red
+                li(data-color="green").select-color__item #[span(class="spanGreen")] Green 
+          li.personal-product__list--item.qty Qty: 
+            .qty__wrap
+              .qty__item
+                input(type="text" value="1" class="qty__count")
+                button.qty__plus
+                  i(class="fa fa-arrow-up" aria-hidden="true")
+                button.qty__minus
+                  i(class="fa fa-arrow-down" aria-hidden="true")
+        .item__btns
+            button.addCart #[i(class="fa fa-shopping-bag fa-marg" aria-hidden="true")] Add to cart
+            button.addWishlist #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+section.product__info
+  .container
+    .info-tabs
+      ul.info-list
+        li.info-list--item
+          a(href="#descrip" class="info-list--link activeTab") Description
+        li.info-list--item
+          a(href="#reviews" class="info-list--link") Reviews
+        li.info-list--item
+          a(href="#info" class="info-list--link") Information
+    div(id="descrip").info-item.activeTab
+      p.info-item--desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla. Donec a neque libero. Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque.
+      p.info-item--desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam erat mi, rutrum at sollicitudin rhoncus, ultricies posuere erat. Duis convallis, arcu nec aliquam consequat, purus felis vehicula felis, a dapibus enim lorem nec augue.
+    div(id="reviews").info-item
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/NGtrySiAhVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    div(id="info").info-item
+      ul.spec-list
+        li.spec-list--item Sizes: #[span XS, S, M, M/L, L, XL]
+        li.spec-list--item Colors: #[span Metallic Blue / Black]
+        li.spec-list--item Frame: #[span Advanced SL-Grade Composite, integrated seatpost, disc]
+        li.spec-list--item Fork: #[span  Advanced SL-Grade Composite, full-composite OverDrive 2 steerer, disc]
+        li.spec-list--item Shock: #[span  N/A]
+        li.spec-list--item Handlebar: #[span Giant Contact SLR Aero]
+        li.spec-list--item Stem: #[span Giant Contact SLR Aero]
+        li.spec-list--item Seatpost: #[span  Advanced SL-grade composite, integrated]
+        li.spec-list--item Saddle: #[span Giant Contact SLR (forward)]
+        li.spec-list--item Pedals: #[span N/A]
+        li.spec-list--item Shifters: #[span Shimano Dura-Ace Di2 with sprinter shifters]
+        li.spec-list--item Front Derailleur: #[span Shimano Dura-Ace Di2]
+        li.spec-list--item Rear Derailleur: #[span Shimano Dura-Ace Di2]
+        li.spec-list--item Brakes: #[span Shimano Dura-Ace, hydraulic]
+        li.spec-list--item Brake Levers: #[span Shimano Di2, hydraulic]
+        li.spec-list--item Cassette: #[span Shimano Dura-Ace, 11x28]
+        li.spec-list--item Chain: #[span TK]
+        li.spec-list--item Crankset: #[span Shimano Dura-Ace with power meter, 36/52]
+        li.spec-list--item Bottom Bracket: #[span Shimano Press Fit]
+        li.spec-list--item Rims: #[span Giant SLR-0 Aero Disc WheelSystem (F:42mm, R:65mm)]
+        li.spec-list--item Hubs: #[span Giant SLR-0 Aero Disc WheelSystem, 12mm thru-axle, CenterLock]
+        li.spec-list--item Spokes: #[span Giant SLR-0 Aero Disc WheelSystem]
+        li.spec-list--item Tires: #[span Giant Gavia AC 0 tubeless, 700x25, folding]
+        li.spec-list--item Extras: #[span RideSense Bluetooth, Race axle]
+        li.spec-list--item Weight: #[span The most accurate way to determine any bike’s weight is to have your local dealer weigh it for you. Many brands strive to list the lowest possible weight, but in reality weight can vary based on size, finish, hardware and accessories. All Giant bikes are designed for best-in-class weight and ride quality]
+
+

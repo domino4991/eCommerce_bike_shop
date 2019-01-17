@@ -1,0 +1,295 @@
+.personal-product__page
+  margin-top: 7rem
+  
+.shadow
+  width: 100%
+  height: 2px
+  background: #e0e0e0
+  position: relative
+  img
+    position: absolute
+    bottom: -18px
+    left: 50%
+    margin-left: -193px
+
+// Стили Персональной страницы товара
+// Блок товара
+
+.personal-product
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  &__item
+    width: 55% // desctop 65%
+    &:last-child
+      width: 38.3% // desctop 33.3%
+      padding-top: 4.3rem 
+  &__img
+    width: 100%
+    object-fit: contain
+  &__caption
+    +use-latoFont(2.5rem, $txtBlack, 700)
+  &__list--top,
+  &__list--middle
+    margin: 0
+    padding: 0
+    list-style: none
+  &__list--item
+    display: inline-block
+  &__list--top
+    li:first-child
+      margin-right: 6.3rem
+  &__desc
+    +use-latoFont(1.6rem, $txtBlack, 300)
+    line-height: 1.5
+    margin: 4.4rem 0
+  &__list--middle
+    margin-bottom: 2rem
+
+.colorInp,
+.qty
+  +use-latoFont(1.9rem, $txtBlack, 300)
+
+.colorInp
+  margin-right: 5rem
+
+.availab
+  +use-latoFont(1.6rem, $txtBlack, 300)
+  span
+    color: $priceRed
+
+.select-color
+  display: inline-block
+  vertical-align: middle
+  position: relative
+
+.selected-color
+  width: 125px
+  height: 43px
+  padding-left: 1.2rem
+  border: 1px solid #e0e0e0
+  border-radius: 5px
+  position: relative
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  cursor: pointer
+  &:after
+    content: ""
+    border-style: solid
+    border-width: 5px 5px 0 5px
+    border-color: $txtBlack transparent transparent transparent
+    position: absolute
+    top: 50%
+    right: 10px
+    margin-top: -2px
+
+.activeSelect--click
+  border-bottom-left-radius: 0px
+  border-bottom-right-radius: 0px
+
+.select-color__list
+  margin: 0
+  padding: 0
+  list-style: none
+  background: #ffffff
+  position: absolute
+  bottom: -145px
+  left: 0px
+  border: 1px solid #e0e0e0
+  border-top: none
+  border-radius: 5px
+  border-top-left-radius: 0px
+  border-top-right-radius: 0px
+  display: none
+  .select-color__item
+    width: 123px
+    +use-latoFont(1.4rem, $txtBlack, 300)
+    padding: 1.5rem 2.2rem 1.5rem 1.2rem
+    border-bottom: 1px solid #e0e0e0
+    transition: .5s
+    cursor: pointer
+    &:last-child
+      border: none
+    &:hover
+      background: #e0e0e0
+
+.activeSelect
+  display: block
+  
+.spanBlue,
+.spanRed,
+.spanGreen
+  width: 14px
+  height: 14px
+  border-radius: 50%
+  background: #42a5f5
+  display: inline-block
+  vertical-align: middle
+  margin-right: 1.2rem
+
+.spanRed
+  background: red
+
+.spanGreen
+  background: green
+
+.qty__wrap
+  display: inline-block
+  vertical-align: middle
+
+.qty__item
+  width: 88px
+  height: 43px
+  border: 1px solid #e0e0e0
+  border-radius: 5px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  position: relative
+
+.qty__count
+  +use-latoFont(1.4rem, $txtBlack, 300)
+  width: 56px
+  padding: 9px 20px
+  border: none
+
+.qty__plus,
+.qty__minus
+  position: absolute
+  right: 0
+  border: none
+  border-left: 1px solid #e0e0e0
+  background: none
+  padding: 3px 10px
+  color: $txtBlack
+  cursor: pointer
+
+.qty__plus
+  top: 0
+  border-bottom: 1px solid #e0e0e0
+
+.qty__minus
+  bottom: 0
+
+.dots-slider
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+  justify-content: center
+
+.dots-item
+  width: 10px
+  height: 10px
+  background: #e0e0e0
+  border-radius: 50%
+  margin-left: 1rem
+  cursor: pointer
+
+.dots-active
+  background: #fff
+  border: 3px solid $priceRed
+
+.social-media
+  margin-top: 2.3rem
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+    display: flex
+    justify-content: flex-start
+  &__item
+    border-right: 2px solid #e0e0e0
+    padding: 0.4rem 0
+    &:last-child
+      border: none  
+  &__link
+    text-decoration: none
+    color: $txtBlack
+    font-size: 2.5rem
+    padding: 0.4rem 2.5rem
+
+.fa-facebook,
+.fa-twitter,
+.fa-google-plus,
+.fa-dribbble
+  transition: .5s
+
+.social-media__link:hover .fa-facebook
+  color: #3b5998
+
+.social-media__link:hover .fa-twitter
+  color: #1dcaff
+
+.social-media__link:hover .fa-google-plus
+  color: #dd4b39
+
+.social-media__link:hover .fa-dribbble
+  color: #ea4c89
+
+// Конец
+
+// Информация о товара, описание и т.д.
+
+.product__info
+  background: #fafafa
+  width: 100%
+  overflow: hidden
+  margin-top: 8rem
+  padding-bottom: 7rem
+  transition: .5s
+
+.info-tabs
+  margin: 7rem 0 5rem 0
+
+.info-list
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+  justify-content: center
+  align-items: center
+  &--item
+    margin-right: 6rem
+    &:last-child
+      margin-right: 0px
+  &--link
+    +use-latoFont(2.5rem, #9e9e9e, 700)
+    text-transform: uppercase
+    text-decoration: none
+    transition: .5s
+
+.activeTab
+  color: $priceRed
+
+.info-item--desc
+  +use-latoFont(1.6rem, $txtBlack, 300)
+  text-align: justify
+  line-height: 1.6
+  margin-bottom: 3rem
+  &:last-child
+    margin-bottom: 0
+
+#reviews
+  display: none
+  text-align: center
+
+.spec-list
+  margin: 0
+  padding: 0
+  list-style: none
+  text-align: center
+  &--item
+    +use-latoFont(1.9rem, $txtBlack, 400)
+    margin-bottom: 1rem
+    border-bottom: 1px solid #e0e0e0
+    padding: 0.5rem
+    &:last-child
+      border-bottom: none
+    span
+      margin-left: 1rem
+      font-weight: 300
+      color: #9e9e9e
+      text-transform: lowercase
+    
