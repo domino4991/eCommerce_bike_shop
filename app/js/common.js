@@ -1,10 +1,22 @@
 $(function() {
-  $('.owl-carousel').owlCarousel({
+// sliders  
+
+  $('.banner__slider').owlCarousel({
     items: 1,
     loop: true,
     navText: ['<i class="fa fa-arrow-left" aria-hidden="true"></i>', '<i class="fa fa-arrow-right" aria-hidden="true"></i>'],
     nav: true
   })
+
+  $('.personal-product__slider').owlCarousel({
+    items: 1,
+    nav: false,
+    dotsContainer: '.dots-slider'
+  })
+
+// End sliders
+
+// Mobile menu
 
   $('.hamburger').on('click', function() {
     $(this).toggleClass('is-active');
@@ -17,6 +29,8 @@ $(function() {
     $('.nav').removeClass('nav-active');
     $('body').removeClass('fixed');
   })
+
+// End mobile menu
 
   $('.addWishlist').on('click', function(){
     $('.fa-wish').toggleClass('activeWish');

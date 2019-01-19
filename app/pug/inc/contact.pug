@@ -1,0 +1,25 @@
+section.contact
+  .container
+    .contact-wrap
+      .contact-wrap--item
+        h2.contact-item--caption Contact info
+        p.contact-item--desc Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+        p.contact-item--address #[span Address:] 123 Sky Tower address name, Los Algeles, USA, Country, 01234
+        p.contact-item--phone #[span Phone:] (012) 345 6789
+        p.contact-item--email #[span E-mail:] info@lorem.com
+      .contact-wrap--item
+        h2.contact-item--captionSecond Contact us
+        .form-wrap
+          h2.form-wrap--caption Leave us a message
+          form.contact-form
+            p.contact-form--name
+              input(type="text", name="name" id="name" class="contact-form--nameInp" placeholder="Name")
+            p.contact-form--email
+              input(type="email", name="email" id="email" class="contact-form--emailInp" placeholder="E-mail")
+            p.contact-form--website
+              input(type="text", name="website" id="website" class="contact-form--websiteInp" placeholder="Website")
+            p.contact-form--message
+              textarea(name="message" id="message" class="contact-form--messageInp" placeholder="Comment")
+            button(type="submit" class="contact-form--submit") Submit Form
+          h2.form-wrap--caption get in touch with us
+          .map

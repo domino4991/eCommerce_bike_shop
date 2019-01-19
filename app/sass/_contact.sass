@@ -1,0 +1,118 @@
+.contact
+  background-color: #f2f2f2
+  padding-top: 9rem
+  padding-bottom: 11rem
+  &-wrap
+    padding: 5rem 3rem 9rem 3rem
+    background: #fff
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &--item
+      width: 65.4%
+      &:first-child
+        width: 31.6%
+        padding: 4.5rem 3rem 0 3rem
+        background-color: #f2f2f2
+
+.contact-item--caption
+  +use-latoFont(1.9rem, $txtBlack, 700)
+  text-transform: uppercase
+  margin-bottom: 3.3rem
+
+.contact-item--desc
+  +use-latoFont(1.6rem, $txtBlack, 300)
+  line-height: 1.6
+  margin-bottom: 4.3rem
+
+.contact-item--address,
+.contact-item--phone,
+.contact-item--email
+  +use-latoFont(1.6rem, $txtBlack, 300)
+  margin-bottom: 3rem
+  line-height: 1.6
+  span
+    color: $priceRed
+    margin-right: 2rem
+
+.contact-item--captionSecond
+  +use-latoFont(4rem, $txtBlack, 700)
+  text-transform: uppercase
+  border-bottom: 2px solid $txtBlack
+
+.form-wrap
+  padding-top: 5rem
+  &--caption
+    +use-latoFont(1.9rem, $txtBlack, 700)
+    text-transform: uppercase
+
+.contact-form
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 3rem
+  &--name,
+  &--email,
+  &--website,
+  &--message
+    width: 50%
+    position: relative
+    &:after
+      content: '\f007'
+      font-family: 'FontAwesome'
+      position: absolute
+      top: 17px
+      right: 16px
+      font-size: 1.6rem
+      color: #e6e6e6
+  &--email
+    &:after
+      content: '\f0e0'
+  &--website
+    &:after
+      content: '\f0c1'
+  &--message
+    &:after
+      content: '\f075'
+  &--nameInp,
+  &--emailInp,
+  &--websiteInp,
+  &--messageInp
+    width: 100%
+    height: 48px
+    padding: 2rem 1.5rem
+    border: 1px solid #e0e0e0
+    outline: none
+    &:focus
+      border: 1px solid $txtBlack
+  &--submit
+    width: 100%
+    display: block
+    border: none
+    background-color: $txtBlack
+    +use-latoFont(1.6rem, #fff, 300)
+    letter-spacing: 6px
+    padding: 1.3rem 0
+    margin-top: 2rem
+    margin-bottom: 5rem
+
+.contact-form--nameInp
+  border-right: none
+
+.contact-form--website,
+.contact-form--message
+  width: 100%
+
+.contact-form--websiteInp,
+.contact-form--messageInp
+  border-top: none
+  width: 100%
+
+.contact-form--messageInp
+  height: 148px
+
+.map
+  width: 100%
+  height: 350px
+  margin-top: 3rem
+  background-color: #515151
