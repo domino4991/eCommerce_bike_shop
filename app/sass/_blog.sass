@@ -1,0 +1,156 @@
+.blog
+  display: flex
+  justify-content: space-between
+  background-color: #f2f2f2
+  padding: 9rem 0 11rem 0
+  &-wrap
+    background-color: #fff
+    padding: 5rem 3rem
+    display: flex
+    justify-content: space-between
+    overflow: hidden
+    &--item
+      width: 65.6%
+
+.main-news
+  background-color: #f9f9f9
+  margin-bottom: 3rem
+  &--img
+    width: 100%
+    object-fit: cover
+  &--content
+    padding: 3.3rem 3rem
+
+.news--caption
+  +use-latoFont(1.9rem, $txtBlack, 700)
+
+.date-post,
+.date-post--recent
+  +use-latoFont(1.4rem, #9e9e9e, 300)
+  margin: 1.7rem 0
+
+.news--shortDesc
+  +use-latoFont(1.6rem, $txtBlack, 300)
+  margin-bottom: 3rem
+  line-height: 1.6
+
+.news--link
+  +use-latoFont(1.6rem, $priceRed, 300)
+  text-decoration: none
+
+.short-news
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  border-bottom: 1px dotted $txtBlack
+  &--img
+    width: 100%
+    object-fit: cover
+  &--item
+    width: 48%
+    padding-bottom: 4rem 
+    margin-bottom: 3rem
+    border-bottom: 1px dotted $txtBlack
+    &:last-child
+      border-bottom: none
+    &:nth-child(5)
+      border-bottom: none
+  &--content
+    width: 100%
+    padding-top: 2.5rem
+
+.blog-wrap--sidebar
+  width: 32%
+  background-color: #f2f2f2
+  padding: 4rem 3rem 0 3rem
+
+.searchBlog
+  padding: 10px
+  width: 238px
+  height: 46px
+  border: 2px solid #e0e0e0
+  border-right: none
+
+.searchBlog-submit
+  position: relative
+  background-color: $txtBlack
+  font-size: 1.6rem
+  color: #fff
+  border: none
+  padding: 1.3rem 1.6rem
+  margin-left: -2px
+  vertical-align: bottom
+  cursor: pointer
+  &:before
+    content: ''
+    width: 0
+    height: 0
+    position: absolute
+    top: 50%
+    left: -6px
+    margin-top: -6px
+    border-style: solid
+    border-width: 6.5px 6px 6.5px 0
+    border-color: transparent $txtBlack transparent
+
+.blog-sidebar--categories
+  margin-top: 5rem
+
+.blog-sidebar--caption
+  +use-latoFont(1.9rem, $txtBlack, 700)
+  text-transform: uppercase
+  padding-bottom: 1.5rem
+  border-bottom: 2px solid $txtBlack
+
+.blog-sidebar--list
+  margin: 3rem 0 0 0
+  padding: 0
+  list-style: none
+
+.blog-sidebar--item
+  margin-bottom: 1.5rem
+  &:last-child
+    margin-bottom: 0
+
+.blog-sidebar--link
+  +use-latoFont(1.6rem, $txtBlack, 300)
+  text-decoration: none
+  .link_span
+    color: #9e9e9e
+    margin-left: 1rem
+
+.blog-sidebar--posts
+  margin-top: 5.7rem
+
+.recent-posts
+  display: flex
+  justify-content: space-between
+  margin-bottom: 2.5rem
+  margin-top: 3rem
+  &--imgBlock
+    width: 70px 
+    height: 70px
+  &--img
+    width: 100%
+    height: 100%
+    object-fit: fill
+  &--content
+    width: 68%
+
+.posts--caption
+  +use-latoFont(1.6rem, $txtBlack, 300)
+
+.date-post--recent
+  margin-top: 1.5rem
+
+.inst-wrap
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 3rem
+
+.inst-blog
+  width: 90px
+  height: 90px
+  background-color: $priceRed
+  margin-bottom: 1rem
