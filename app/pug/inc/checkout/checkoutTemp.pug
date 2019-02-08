@@ -1,0 +1,87 @@
+section
+  .container.checkout
+    .checkout--item
+      h2.checkout--mainCaption Checkout
+      p.checkout--links Returning customer? #[a(href="#") Click here to login]
+      p.checkout--links Have a coupon? #[a(href="#") Click here to enter your code]
+      h2.checkout--caption Billing details
+      .form-box
+        form.checkout--form
+          p.checkout--label Country #[sup *]
+          select.checkout--select
+            option(value="usa") United States(US)
+            option(value="rf") Russian Federation(RUS)
+            option(value="kgz") Kyrgyzstan(KGZ)
+          ul.checkout--form-list
+            li.checkout--form-item
+              label(class="checkout--label" for="fName") First Name #[sup *] #[br]
+              input(type="text", name="firstName" id="fName" class="checkout--input")
+            li.checkout--form-item
+              label(class="checkout--label" for="lName") Last Name #[sup *] #[br]
+              input(type="text", name="lastName" id="lName" class="checkout--input")
+          label(class="checkout--label" for="companyName") Company Name
+          input(type="text", name="companyName" id="companyName" class="checkout--input")
+          label(class="checkout--label" for="address") Address #[sup *]
+          input(type="text", name="address" id="address" class="checkout--input")
+          label(class="checkout--label" for="town") Town / City #[sup *]
+          input(type="text", name="town" id="town" class="checkout--input")
+          ul.checkout--form-list
+            li.checkout--form-item
+              label(class="checkout--label" for="state") State #[sup *]
+              input(type="text", name="state" id="state" class="checkout--input")
+            li.checkout--form-item
+              label(class="checkout--label" for="zip") Zip #[sup *]
+              input(type="text", name="zip" id="zip" class="checkout--input")
+            li.checkout--form-item
+              label(class="checkout--label" for="email") Email Address #[sup *]
+              input(type="email", name="companyName" id="email" class="checkout--input")
+            li.checkout--form-item
+              label(class="checkout--label" for="phone") Phone #[sup *]
+              input(type="text", name="phone" id="phone" class="checkout--input")
+      a(href="#" class="checkout--links-acc") Create an account?
+      a(href="#" class="checkout--links-acc") Ship to a different address?
+      h2.order-notes Order Notes
+      textarea(name="order-notes" class="orderNotes-msg" placeholder="Notes about your order, e.g. special notes for delivery.")
+    .checkout--item.order
+      .order-wrap
+        h2.order-wrap__caption Your Order
+        table
+          tr
+            th.table-header Products
+            th.table-header Total
+          tr
+            td.table-body Liv Race Day Short #[span.item-count x1]
+            td.table-body $30.00
+          tr
+            td.table-body City Pedals Sport #[span.item-count x1]
+            td.table-body $18.00
+          tr
+            td.table-body Gloss #[span.item-count x1]
+            td.table-body $325.00
+          tr
+            th.table-footer Subtotal
+            th.table-footer $490.00
+        .order-shipping
+          h2.order-shipping__caption Shipping and Handling
+          form.order-shipping__form
+            input(type="radio" name="delivery" id="flatRate" value="Flat Rate" checked)
+            label(for="flatRate" class="order-shipping__form--label") Flat Rate: #[span $30.00]
+            input(type="radio" name="delivery" id="intDeliv" value="International Delivery")
+            label(for="intDeliv" class="order-shipping__form--label") International Delivery: #[span $150.00]
+            input(type="radio" name="delivery" id="localDeliv" value="Local Delivery")
+            label(for="localDeliv" class="order-shipping__form--label") Local Delivery: #[span $90.00]
+            input(type="radio" name="delivery" id="LocalPickUp" value="Local Pick Up(Free)")
+            label(for="LocalPickUp" class="order-shipping__form--label") Local Pick Up(Free)
+        ul.order-shipping__list
+          li.order-shipping__item Order Total
+          li.order-shipping__item
+            span.order-total__span $520.00
+        .payments
+          form.payments__form
+            input(type="radio" name="payment" id="bank" value="Direct Bank Transfer" checked)
+            label(for="bank" class="order-shipping__form--label") Direct Bank Transfer
+            p.descBankTransfer Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.
+            input(type="radio" name="payment" id="chequePayments" value="Cheque Payments")
+            label(for="chequePayments" class="order-shipping__form--label") Cheque Payments
+            input(type="radio" name="payment" id="payPal" value="PayPal")
+            label(for="payPal" class="order-shipping__form--label") PayPal
