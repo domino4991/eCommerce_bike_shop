@@ -1,0 +1,61 @@
+.shopCart
+  margin-top: 12rem
+  &__caption
+    +use-latoFont(4rem, $txtBlack, 700)
+    text-transform: uppercase
+  &__table
+    margin-top: 4.5rem
+    border-collapse: collapse
+    width: 100%
+    &--header
+      +use-latoFont(1.9rem, $txtBlack, 700)
+      border-bottom: 1px solid #e0e0e0
+      padding: 20px
+      &:first-child
+        text-align: left
+        padding-left: 70px
+    &--body
+      +use-latoFont(1.6rem, $txtBlack, 300)
+      padding: 20px 10px
+      text-align: center
+      border-bottom: 1px solid #e0e0e0
+      &--item
+        text-align: left
+        width: 35%
+        &:last-child
+          width: 70%
+          margin-left: 2rem
+          display: flex
+          justify-content: center
+          flex-direction: column
+          align-content: center
+    &--img
+      width: 100%
+      height: 100%
+      object-fit: contain
+    &--delBtn
+      border: none
+      background-color: #fff
+      font-size: 18px
+      cursor: pointer
+
+.shopCart__wrap--itemProd
+  display: flex
+  justify-content: flex-start
+  width: 310px
+
+.shopCart__name--product
+  margin-bottom: 15px
+
+.table__colorSpan
+  width: 14px
+  height: 14px
+  background-color: #ff9800
+  border-radius: 50%
+  display: inline-block
+  vertical-align: middle
+  margin-left: 7px 
+
+.table__price
+  color: $priceRed
+  font-weight: 400
