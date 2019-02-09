@@ -1,0 +1,30 @@
+section
+  .container.shopCart
+    h2.shopCart__caption Shop Cart
+    .table-wrap
+      table.shopCart__table
+        tr
+          th.shopCart__table--header Product
+          th.shopCart__table--header Price
+          th.shopCart__table--header Quantity
+          th.shopCart__table--header Total
+        tr
+          td.shopCart__table--body
+            button(class="shopCart__table--delBtn") &times;
+          td.shopCart__table--body
+            .shopCart__table--body--item
+              img(src="img/upload/bike1.jpg", alt="Bike")
+            .shopCart__table--body--item
+              p.shopCart__name--product Liv Race Day Short
+              p.shopCart__color--product Color: #[span]
+          td.shopCart__table--body $30.00
+          td.shopCart__table--body
+            .qty__wrap
+              .qty__item
+                input(type="text" value="1" class="qty__count")
+                button.qty__plus
+                  i(class="fa fa-arrow-up" aria-hidden="true")
+                button.qty__minus
+                  i(class="fa fa-arrow-down" aria-hidden="true")
+          td.shopCart__table--body $30.00
+            
