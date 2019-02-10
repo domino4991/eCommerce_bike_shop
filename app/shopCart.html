@@ -131,7 +131,7 @@
 											</div>
 										</div>
 									</td>
-									<td class="shopCart__table--body"><span class="table__price">$30.00</span></td>
+									<td class="shopCart__table--body"><span class="table__totalPrice">$30.00</span></td>
 								</tr>
 								<tr>
 									<td class="shopCart__table--body">
@@ -146,7 +146,7 @@
 											</div>
 										</div>
 									</td>
-									<td class="shopCart__table--body"><span class="table__price">$30.00</span></td>
+									<td class="shopCart__table--body"><span class="table__price">$18.00</span></td>
 									<td class="shopCart__table--body">
 										<div class="qty__wrap">
 											<div class="qty__item">
@@ -156,7 +156,7 @@
 											</div>
 										</div>
 									</td>
-									<td class="shopCart__table--body"><span class="table__price">$30.00</span></td>
+									<td class="shopCart__table--body"><span class="table__totalPrice">$36.00</span></td>
 								</tr>
 								<tr>
 									<td class="shopCart__table--body">
@@ -171,7 +171,7 @@
 											</div>
 										</div>
 									</td>
-									<td class="shopCart__table--body"><span class="table__price">$30.00</span></td>
+									<td class="shopCart__table--body"><span class="table__price">$325.00</span></td>
 									<td class="shopCart__table--body">
 										<div class="qty__wrap">
 											<div class="qty__item">
@@ -181,9 +181,48 @@
 											</div>
 										</div>
 									</td>
-									<td class="shopCart__table--body"><span class="table__price">$30.00</span></td>
+									<td class="shopCart__table--body"><span class="table__totalPrice">$325.00</span></td>
 								</tr>
 							</table>
+						</div>
+						<ul class="shopCart__links">
+							<li class="shopCart__links--item"><a class="backToShopLink" href="on-road.html">< Back to shop</a></li>
+							<li class="shopCart__links--item">
+								<button class="backToShopBtn">update cart</button>
+							</li>
+						</ul>
+						<div class="shopCart__total">
+							<div class="shopCart__total--item">
+								<h2 class="shopCart__total--caption">Coupon</h2>
+								<p class="shopCart__total--desc">Enter your coupon code if you have one.</p>
+								<form class="shopCart__total--form">
+									<input class="shopCart__total--inpCoupon" type="text" placeholder="Coupon code"/>
+									<button class="shopCart__total--btn" type="submit">Apply Coupon</button>
+								</form>
+							</div>
+							<div class="shopCart__total--item">
+								<div class="order-shipping">
+									<ul class="subtotal__list">
+										<li class="subtotal__list--item">Subtotal</li>
+										<li class="subtotal__list--item subtotal-price">$490.00 </li>
+									</ul>
+									<h2 class="order-shipping__caption">Shipping and Handling</h2>
+									<form class="order-shipping__form">
+										<input type="radio" name="delivery" id="flatRate" value="Flat Rate" checked="checked"/>
+										<label class="order-shipping__form--label" for="flatRate">Flat Rate: <span>$30.00</span></label>
+										<input type="radio" name="delivery" id="intDeliv" value="International Delivery"/>
+										<label class="order-shipping__form--label" for="intDeliv">International Delivery: <span>$150.00</span></label>
+										<input type="radio" name="delivery" id="localDeliv" value="Local Delivery"/>
+										<label class="order-shipping__form--label" for="localDeliv">Local Delivery: <span>$90.00</span></label>
+										<input type="radio" name="delivery" id="LocalPickUp" value="Local Pick Up(Free)"/>
+										<label class="order-shipping__form--label" for="LocalPickUp">Local Pick Up(Free)</label>
+									</form>
+								</div>
+								<ul class="order-shipping__list shopCart__total--list">
+									<li class="order-shipping__item">Order Total</li>
+									<li class="order-shipping__item"><span class="order-total__span">$520.00       </span></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</section>

@@ -27,7 +27,7 @@ section
                   i(class="fa fa-arrow-up" aria-hidden="true")
                 button.qty__minus
                   i(class="fa fa-arrow-down" aria-hidden="true")
-          td.shopCart__table--body #[span.table__price $30.00]
+          td.shopCart__table--body #[span.table__totalPrice $30.00]
         tr
           td.shopCart__table--body
             button(class="shopCart__table--delBtn") &times;
@@ -38,7 +38,7 @@ section
               .shopCart__table--body--item
                 p.shopCart__name--product Liv Race Day Short
                 p.shopCart__color--product Color: #[span.table__colorSpan]
-          td.shopCart__table--body #[span.table__price $30.00]
+          td.shopCart__table--body #[span.table__price $18.00]
           td.shopCart__table--body
             .qty__wrap
               .qty__item
@@ -47,7 +47,7 @@ section
                   i(class="fa fa-arrow-up" aria-hidden="true")
                 button.qty__minus
                   i(class="fa fa-arrow-down" aria-hidden="true")
-          td.shopCart__table--body #[span.table__price $30.00]
+          td.shopCart__table--body #[span.table__totalPrice $36.00]
         tr
           td.shopCart__table--body
             button(class="shopCart__table--delBtn") &times;
@@ -58,7 +58,7 @@ section
               .shopCart__table--body--item
                 p.shopCart__name--product Liv Race Day Short
                 p.shopCart__color--product Color: #[span.table__colorSpan]
-          td.shopCart__table--body #[span.table__price $30.00]
+          td.shopCart__table--body #[span.table__price $325.00]
           td.shopCart__table--body
             .qty__wrap
               .qty__item
@@ -67,5 +67,35 @@ section
                   i(class="fa fa-arrow-up" aria-hidden="true")
                 button.qty__minus
                   i(class="fa fa-arrow-down" aria-hidden="true")
-          td.shopCart__table--body #[span.table__price $30.00]
-            
+          td.shopCart__table--body #[span.table__totalPrice $325.00]
+    ul.shopCart__links
+      li.shopCart__links--item
+        a(href="on-road.html" class="backToShopLink") < Back to shop
+      li.shopCart__links--item
+        button(class="backToShopBtn") update cart
+    .shopCart__total
+      .shopCart__total--item
+        h2.shopCart__total--caption Coupon
+        p.shopCart__total--desc Enter your coupon code if you have one.
+        form.shopCart__total--form
+          input(type="text" class="shopCart__total--inpCoupon" placeholder="Coupon code")
+          button(type="submit" class="shopCart__total--btn") Apply Coupon
+      .shopCart__total--item
+        .order-shipping
+          ul.subtotal__list
+            li.subtotal__list--item Subtotal
+            li(class="subtotal__list--item subtotal-price") $490.00 
+          h2.order-shipping__caption Shipping and Handling
+          form.order-shipping__form
+            input(type="radio" name="delivery" id="flatRate" value="Flat Rate" checked)
+            label(for="flatRate" class="order-shipping__form--label") Flat Rate: #[span $30.00]
+            input(type="radio" name="delivery" id="intDeliv" value="International Delivery")
+            label(for="intDeliv" class="order-shipping__form--label") International Delivery: #[span $150.00]
+            input(type="radio" name="delivery" id="localDeliv" value="Local Delivery")
+            label(for="localDeliv" class="order-shipping__form--label") Local Delivery: #[span $90.00]
+            input(type="radio" name="delivery" id="LocalPickUp" value="Local Pick Up(Free)")
+            label(for="LocalPickUp" class="order-shipping__form--label") Local Pick Up(Free)
+        ul.order-shipping__list.shopCart__total--list
+          li.order-shipping__item Order Total
+          li.order-shipping__item
+            span.order-total__span $520.00       
