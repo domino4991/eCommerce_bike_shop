@@ -1,0 +1,24 @@
+include inc/mixin
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:300,400,400i,700,900|Roboto+Slab" rel="stylesheet")
+    link(rel="stylesheet", href="css/font-awesome.min.css")
+    link(rel="stylesheet", href="../css/owl.carousel.css")
+    link(rel="stylesheet", href="css/ion.rangeSlider.css")
+    link(rel="stylesheet", href="css/style.min.css")
+    script(src="js/libs.min.js")
+    script(src="js/ion.rangeSlider.min.js")
+    script(src="js/common.js")
+  body
+    include inc/header/header
+    main
+      article
+        include inc/on-road/bmx-catalog
+    footer.footer
+      include inc/footer/footer
