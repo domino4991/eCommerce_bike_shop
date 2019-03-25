@@ -1,0 +1,908 @@
+.container.on-road
+  section.on-road__catalog
+    .wrap-breadcrumb
+      p.breadcrumb Home -> Category -> GEAR
+    .wrap__category-img
+      img(src="img/upload/size.jpg", alt="dh" class="category__banner")
+    .catalog__filter
+      .catalog__views
+        ul.views__list
+          li.views__item
+            a(class="views__btn activeViews" href="#grid")
+              i(class="fa fa-th-large" aria-hidden="true")
+          li.views__item
+            a(class="views__btn" href="#list")
+              i(class="fa fa-th-list" aria-hidden="true")
+      .catalog__sort
+        ul.sort__list
+          li.sort__item
+            select(name="items" id="items" class="items")
+              option(value="12items" selected) 12 items/page
+              option(value="24items") 24 items/page
+              option(value="48items") 48 items/page
+              option(value="all") All items/page
+          li.sort__item
+            label(for="sortBy" class="labelSortBy") Sort By:
+            select(name="sortBy" id="sortBy" class="sortBy")
+              option(value="position" selected) Position
+              option(value="priceAscending") Price ascending
+              option(value="priceDescending") Price descending
+              option(value="NewProduct") New product
+              option(value="OldProduct") Old product
+    .wrap-tabs
+      div(class="catalog__wrap-products activeViews" id="grid")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/SureLock_Protector_1_LS.jpg" alt="Rack-It Disc Rack")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") SureLock Protector 1 LS
+          p.price__products.price__catalog &#36;65.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/Cyclotron_Mag_II_Trainer.jpg" alt="P-TRX1 29er Alloy Trail")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") Cyclotron Mag II Trainer
+          p.price__products.price__catalog &#36;180.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/bottle.jpg" alt="SureLock Protector 1 LS")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") Bottle Bicycle
+          p.price__products.price__catalog &#36;20.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/bell.jpeg" alt="Rack-It Disc Rack")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") Bell Cateye
+          p.price__products.price__catalog &#36;10.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/babySeat.png" alt="P-TRX1 29er Alloy Trail")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") Baby Seat
+          p.price__products.price__catalog &#36;200.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/Rack-It_Disc_Rack.jpg" alt="SureLock Protector 1 LS")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") Rack-It Disc Rack
+          p.price__products.price__catalog &#36;1100.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/P-TRX1_29er_Alloy_Trail.jpg" alt="Rack-It Disc Rack")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") P-TRX1 29er Alloy Trail
+          p.price__products.price__catalog &#36;320.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/SureLock_Protector_1_LS.jpg" alt="P-TRX1 29er Alloy Trail")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") SureLock Protector 1 LS
+          p.price__products.price__catalog &#36;65.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/Liv giant_Sport_Pedals.jpg" alt="SureLock Protector 1 LS")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") Liv/giant Sport Pedals
+          p.price__products.price__catalog &#36;48.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/Liv_Connect_Forward.jpg" alt="Rack-It Disc Rack")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") Liv Connect Forward
+          p.price__products.price__catalog &#36;15.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/Cyclotron_Mag_II_Trainer.jpg" alt="P-TRX1 29er Alloy Trail")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") Cyclotron Mag II Trainer
+          p.price__products.price__catalog &#36;180.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/Comfort_DX_Grips.jpg" alt="SureLock Protector 1 LS")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") Comfort DX Grips
+          p.price__products.price__catalog &#36;12.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")
+        .item__products.catalog
+          .img__wrap
+            a(href="propelAdv.html" class="productLink")
+              img(class="catalog__img" src="img/upload/Liv_Rev_Helmet.jpg" alt="SureLock Protector 1 LS")
+            button.hoverBtn-btn Add to cart
+            button.hoverBtn-btn Quick view
+          a(href="#" class="desc__products") Liv Rev Helmet
+          p.price__products.price__catalog &#36;150.00
+          ul.colors__list.catalog__item-color
+            li(class="colors__item") 
+              button(class="crlBlue colors__btn")
+            li(class="colors__item")
+              button(class="crlOrange colors__btn")
+            li(class="colors__item")
+              button(class="crlViolet colors__btn")
+            li(class="colors__item")
+              button(class="crlGrey colors__btn")
+            li(class="colors__item")
+              button(class="crlBrown colors__btn")      
+      div(class="catalog__wrap-products" id="list")
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/SureLock_Protector_1_LS.jpg", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") SureLock Protector 1 LS
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;65.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/Cyclotron_Mag_II_Trainer.jpg", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") Cyclotron Mag II Trainer
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;180.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/bottle.jpg", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") Bottle Bicycle
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;20.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/bell.jpeg", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") Bell Cateye
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;10.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/babySeat.png", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") Baby Seat
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;200.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/Rack-It_Disc_Rack.jpg", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") Rack-It Disc Rack
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;1100.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/P-TRX1_29er_Alloy_Trail.jpg", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") P-TRX1 29er Alloy Trail
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;320.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/SureLock_Protector_1_LS.jpg", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") SureLock Protector 1 LS
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;65.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/Liv giant_Sport_Pedals.jpg", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") Liv/giant Sport Pedals
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;48.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/Liv_Connect_Forward.jpg", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") Liv Connect Forward
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;15.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/Cyclotron_Mag_II_Trainer.jpg", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") Cyclotron Mag II Trainer
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;180.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/Comfort_DX_Grips.jpg", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") Comfort DX Grips
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;12.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view
+        .catalog-list
+          .wrap-catalogList__img.wrap__catalogList-item
+            a(href="propelAdv.html" class="productLink")
+              img(src="img/upload/Liv_Rev_Helmet.jpg", alt="Giant" class="catalogList__img")
+          .wrap-catalogList__desc.wrap__catalogList-item
+            a(href="#" class="desc__products") Liv Rev Helmet
+            ul.desc__list
+              li.desc__list-item.priceItem &#36;150.00
+              li.desc__list-item
+                .wrap-modelRating.catalogRating
+                  div(class="rating__item fa fa-star-o" data-rate="1")
+                  div(class="rating__item fa fa-star-o" data-rate="2")
+                  div(class="rating__item fa fa-star-o" data-rate="3")
+                  div(class="rating__item fa fa-star-o" data-rate="4")
+                  div(class="rating__item fa fa-star-o" data-rate="5")
+            ul.catalog__list-color
+              li(class="colors__item") 
+                button(class="crlBlue colors__btn")
+              li(class="colors__item")
+                button(class="crlOrange colors__btn")
+              li(class="colors__item")
+                button(class="crlViolet colors__btn")
+              li(class="colors__item")
+                button(class="crlGrey colors__btn")
+              li(class="colors__item")
+                button(class="crlBrown colors__btn")
+            p.catalogList__desc Excellence is never an accident. It is always the result of high intention and intelligent execution; it represents the wise choice of many alternatives.
+            ul.btn__list
+              li.btn__item
+                button.catalogAddToCart.catalog-btn Add to cart
+              li.btn__item
+                button.catalogAddWishlist.catalog-btn #[i(class="fa fa-heart fa-wish" aria-hidden="true")] Add to wishlist
+              li.btn__item
+                button.catalogQuickView.catalog-btn #[i(class="fa fa-eye fa-wish" aria-hidden="true")] Quick view        
+  aside.sidebar
+    h2.sidebar__caption Bikes Product
+    .product__acc
+      p.product__category Bicycle lock
+        ul.product__list
+          li.product-list__item
+            button.product__type Anti-theft cable #[span (3)]
+          li.product-list__item
+            button.product__type U-shaped lock #[span (3)]
+          li.product-list__item
+            button.product__type Chain bike locks #[span (1)]
+          li.product-list__item
+            button.product__type Folding plate locks #[span (1)]
+          li.product-list__item
+            button.product__type Locking wheels bicycle locks #[span (4)]
+      p.product__category Bottles
+        ul.product__list
+          li.product-list__item
+            button.product__type Plastic #[span (3)]
+          li.product-list__item
+            button.product__type Aluminum #[span (3)]
+          li.product-list__item
+            button.product__type Ceramic coating #[span (1)]
+      p.product__category Bells
+        ul.product__list
+          li.product-list__item
+            button.product__type Mechanical #[span (3)]
+          li.product-list__item
+            button.product__type Electric #[span (3)]
+      p.product__category Baby seat
+        ul.product__list
+          li.product-list__item
+            button.product__type Front #[span (3)]
+          li.product-list__item
+            button.product__type Rear #[span (3)]
+      p.product__category Bicycle wheels
+        ul.product__list
+          li.product-list__item
+            button.product__type Steel #[span (3)]
+          li.product-list__item
+            button.product__type Aluminum #[span (3)]
+      p.product__category Pedals
+        ul.product__list
+          li.product-list__item
+            button.product__type Walking Pedals #[span (3)]
+          li.product-list__item
+            button.product__type MTB pedals #[span (3)]
+          li.product-list__item
+            button.product__type Tucklips #[span (3)]
+          li.product-list__item
+            button.product__type Contact MTB pedals #[span (3)]
+          li.product-list__item
+            button.product__type Semicontact pedals #[span (3)]
+          li.product-list__item
+            button.product__type Road pedals #[span (3)]
+          li.product-list__item
+            button.product__type Folding pedals #[span (3)]
+      p.product__category Seats
+        ul.product__list
+          li.product-list__item
+            button.product__type Leather #[span (3)]
+          li.product-list__item
+            button.product__type Women's #[span (3)]
+          li.product-list__item
+            button.product__type Baby #[span (3)]
+          li.product-list__item
+            button.product__type MTB #[span (3)]
+          li.product-list__item
+            button.product__type BMX #[span (3)]
+          li.product-list__item
+            button.product__type Road race #[span (3)]
+          li.product-list__item
+            button.product__type Plastic #[span (3)]
+    h2.sidebar__caption.catalog__caption Catalog
+    .wrap-price__filter.catalog__acc
+      p.price__filter.acc__caption Price filter
+        ul.filter__list.acc__body
+          li.filter__item
+            input(type="text", name="filter_range" class="filter__inp" value="")
+      p.color__filter.acc__caption Color filter
+        ul.color__list.acc__body
+          li(class="color__item") 
+            button(class="crlRed color__filter-btn")
+          li(class="color__item")
+            button(class="crlBlue color__filter-btn")
+          li(class="color__item")
+            button(class="crlViolet color__filter-btn")
+          li(class="color__item")
+            button(class="crlGreen color__filter-btn")
+          li(class="color__item")
+            button(class="crlAqua color__filter-btn")
+          li(class="color__item")
+            button(class="crlLightGreen color__filter-btn")
+          li(class="color__item")
+            button(class="crlOrange color__filter-btn")
+      p.size__filter.acc__caption Size filter
+        ul.size__list.acc__body
+          li.size__item
+            button.size__type S - Small #[span (3)]
+          li.size__item
+            button.size__type M - Medium #[span (3)]
+          li.size__item
+            button.size__type L - Large #[span (1)]
+          li.size__item
+            button.size__type XL - Extra Large #[span (1)]
+          li.size__item
+            button.size__type XXL - Extra Extra Large #[span (4)]
+      p.brand__filter.acc__caption Brand filter
+        ul.brand__list.acc__body
+          li.brand__item
+            button.brand__type Trek #[span (24)]
+          li.brand__item
+            button.brand__type Cannondale #[span (18)]
+          li.brand__item
+            button.brand__type Jamis #[span (9)]
+          li.brand__item
+            button.brand__type Specialized #[span (39)]
+          li.brand__item
+            button.brand__type Giant #[span (12)]
+          li.brand__item
+            button.brand__type Cervelo #[span (39)]
+          li.brand__item
+            button.brand__type Bianchi #[span (12)]
+      h2.sidebar__caption.sidebar-product__caption Featured Product
+      .wrap-fearured__product
+        .sidebar__product
+          .sidebar__product-item
+            img(src="img/upload/bike1.jpg", alt="Giant" class="product-item__img")
+          .sidebar__product-item
+            p.sidebarModelBike Propel Advanced Pro Frameset
+            .wrap-modelRating
+              div(class="rating__item fa fa-star-o" data-rate="1")
+              div(class="rating__item fa fa-star-o" data-rate="2")
+              div(class="rating__item fa fa-star-o" data-rate="3")
+              div(class="rating__item fa fa-star-o" data-rate="4")
+              div(class="rating__item fa fa-star-o" data-rate="5")
+            p.sidebarModelPrice &#36;2,290.00
+        .sidebar__product
+          .sidebar__product-item
+            img(src="img/upload/bike2.jpg", alt="Giant" class="product-item__img")
+          .sidebar__product-item
+            p.sidebarModelBike Propel Advanced Pro Frameset
+            .wrap-modelRating
+              div(class="rating__item fa fa-star-o" data-rate="1")
+              div(class="rating__item fa fa-star-o" data-rate="2")
+              div(class="rating__item fa fa-star-o" data-rate="3")
+              div(class="rating__item fa fa-star-o" data-rate="4")
+              div(class="rating__item fa fa-star-o" data-rate="5")
+            p.sidebarModelPrice &#36;2,290.00
+        .sidebar__product
+          .sidebar__product-item
+            img(src="img/upload/bike3.jpg", alt="Giant" class="product-item__img")
+          .sidebar__product-item
+            p.sidebarModelBike Propel Advanced Pro Frameset
+            .wrap-modelRating
+              div(class="rating__item fa fa-star-o" data-rate="1")
+              div(class="rating__item fa fa-star-o" data-rate="2")
+              div(class="rating__item fa fa-star-o" data-rate="3")
+              div(class="rating__item fa fa-star-o" data-rate="4")
+              div(class="rating__item fa fa-star-o" data-rate="5")
+            p.sidebarModelPrice &#36;2,290.00
+        .sidebar__product
+          .sidebar__product-item
+            img(src="img/upload/bike4.jpg", alt="Giant" class="product-item__img")
+          .sidebar__product-item
+            p.sidebarModelBike Propel Advanced Pro Frameset
+            .wrap-modelRating
+              div(class="rating__item fa fa-star-o" data-rate="1")
+              div(class="rating__item fa fa-star-o" data-rate="2")
+              div(class="rating__item fa fa-star-o" data-rate="3")
+              div(class="rating__item fa fa-star-o" data-rate="4")
+              div(class="rating__item fa fa-star-o" data-rate="5")
+            p.sidebarModelPrice &#36;2,290.00
+        .sidebar__product
+          .sidebar__product-item
+            img(src="img/upload/bmx-bike1.jpg", alt="Giant" class="product-item__img")
+          .sidebar__product-item
+            p.sidebarModelBike Propel Advanced Pro Frameset
+            .wrap-modelRating
+              div(class="rating__item fa fa-star-o" data-rate="1")
+              div(class="rating__item fa fa-star-o" data-rate="2")
+              div(class="rating__item fa fa-star-o" data-rate="3")
+              div(class="rating__item fa fa-star-o" data-rate="4")
+              div(class="rating__item fa fa-star-o" data-rate="5")
+            p.sidebarModelPrice &#36;2,290.00
