@@ -111,44 +111,49 @@ $(function() {
   })
 
 // rating
-  function rating(elem) {
-    let ratingLine = $('.wrap-modelRating .rating__item');
-    ratingLine.removeClass('activeStar');
-    elem.addClass('activeStar');
-    for(let i = 0, rLen = ratingLine.length; i < rLen; i++) {
-      if($(ratingLine[i]).hasClass('activeStar')){
-        break;
-      } else {
-        $(ratingLine[i]).addClass('activeStar');
-      }
-    }
-  }
+  // function rating(elem) {
+  //   let ratingLine = $('.wrap-modelRating .rating__item');
+  //   ratingLine.removeClass('activeStar');
+  //   elem.addClass('activeStar');
+  //   for(let i = 0, rLen = ratingLine.length; i < rLen; i++) {
+  //     if($(ratingLine[i]).hasClass('activeStar')){
+  //       break;
+  //     } else {
+  //       $(ratingLine[i]).addClass('activeStar');
+  //     }
+  //   }
+  // }
 
-  $('.wrap-modelRating .rating__item').click(function(){
-    let cur = $(this),
-        ratingLine = $('.wrap-modelRating .rating__item');
-    ratingLine.removeClass('click-activeStar');
-    rating(cur);
-    cur.addClass('click-activeStar');
-  })
+  // $('.wrap-modelRating .rating__item').click(function(){
+  //   let cur = $(this),
+  //       ratingLine = $('.wrap-modelRating .rating__item');
+  //   ratingLine.removeClass('click-activeStar');
+  //   rating(cur);
+  //   cur.addClass('click-activeStar');
+  // })
 
-  $('.wrap-modelRating .rating__item')
-      .mouseover(function(){
-        let cur = $(this);
-        rating(cur);
-        cur.addClass('activeStar');
-      })
-      .mouseout(function(){
-        let ratingLine = $('.wrap-modelRating .rating__item');
-        ratingLine.addClass('activeStar');
-        for(let i = 5; i > 0; i--) {
-          if($(ratingLine[i]).hasClass('click-activeStar')) {
-            break;
-          } else {
-            $(ratingLine[i]).removeClass('activeStar');
-          }
-        }
-      })
+  // $('.wrap-modelRating .rating__item')
+  //     .mouseover(function(){
+  //       let cur = $(this);
+  //       rating(cur);
+  //       cur.addClass('activeStar');
+  //     })
+  //     .mouseout(function(){
+  //       let ratingLine = $(this);
+  //       for(let i = 5; i > 0; i--) {
+  //         if($(ratingLine[i]).hasClass('click-activeStar')) {
+  //           break;
+  //         } else {
+  //           $(ratingLine[i]).removeClass('activeStar');
+  //         }
+  //       }
+  //     })
+  $('.wrap-modelRating').magicRatingInit({
+    iconGood: "fa-star",
+	  iconBad: "fa-star-o",
+	  maxMark: 5,
+	  currentRating: 0
+  });
 // End
 
 // Выбор цвета продукта
